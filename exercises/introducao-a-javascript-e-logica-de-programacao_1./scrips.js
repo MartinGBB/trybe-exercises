@@ -1,5 +1,7 @@
 let a = 5;
 let b = 10;
+let comp1 = 15;
+let comp2 = 20;
 
 //Soma
 console.log('Adicao');
@@ -20,3 +22,12 @@ console.log(a/b);
 //Módulo
 console.log('Módulo');
 console.log(a%b);
+
+//Comparação
+
+console.log("Numero maior:");
+if (comp1>comp2){
+    console.log(comp1);
+}else{
+console.log(comp2);
+}
