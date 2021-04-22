@@ -7,6 +7,8 @@ let num1 = 18;
 let num2 = 2;
 let num3 = 25;
 
+let soma = 1+1;
+
 //Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas variáveis, a e b , definidas no começo com os valores que serão operados. Faça programas para:
 //Soma
 console.log('Adicao');
@@ -46,5 +48,14 @@ if (num1>num2 && num1>num3){
 }else if (num2>num1 && num2>num3){
     console.log("o numero maior é ",num2);
 }else{
-    console.log("o numero maior é ",num3)
+    console.log("o numero maior é ",num3);
+}
+
+//Faça um programa que, dado um valor definido numa variável, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
+
+console.log('positivo ou negativo?')
+if(soma==2){
+    console.log('negativo');
+}else{
+    console.log(0);
 }
