@@ -9,6 +9,10 @@ let num3 = 25;
 
 let soma = 1+1;
 
+let angulo1 = 45;
+let angulo2 = 45;
+let angulo3 = 90;
+
 //Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas variáveis, a e b , definidas no começo com os valores que serão operados. Faça programas para:
 //Soma
 console.log('Adicao');
@@ -58,4 +62,17 @@ if(soma==2){
     console.log('negativo');
 }else{
     console.log(0);
+}
+
+//Faça um programa que defina três variáveis com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
+
+console.log('Os angulos do triangulo são corretos? ')
+if (angulo1 + angulo2 + angulo3 == 180) {
+   console.log('true');
+}
+else if(angulo1 + angulo2 +angulo3 !=180){
+   console.log('false')
+}
+else if(angulo1<1 , angulo2 <1, angulo3 <1){
+   console.log('erro')
 }
