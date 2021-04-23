@@ -3,7 +3,6 @@ let soma = 0;
 //2.Para o segundo exercício, some todos os valores contidos no array e imprima o resultado;
 for(let index1 = 0; index1 < numbers.length; index1 += 1) {
     soma = numbers[index1] + soma;
-    //console.log(numbers[index1]);
 
 };
 console.log(soma);
