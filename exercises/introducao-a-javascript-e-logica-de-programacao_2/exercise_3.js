@@ -3,7 +3,7 @@ let soma = 0;
 let media = 0;
 //3)Para o terceiro exercício, calcule e imprima a média aritmética dos valores contidos no array;
 for(let index = 0; index < numbers.length; index += 1){
-    soma += numbers[index]
+    soma += numbers[index];
     media = soma / numbers.length;
-}
+};
 console.log(media);
