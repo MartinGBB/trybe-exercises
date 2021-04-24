@@ -1,1 +1,4 @@
-5, 9, 3, 19, 70, 8, 100, 2, 35, 27
+let num = 25;
+for(let index = 1; index < num; index +=1){
+    console.log(num[index])
+}
