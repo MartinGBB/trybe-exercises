@@ -6,11 +6,11 @@ let resultadoimpar = 0;
 for(var index = 0; index < numbers.length; index +=1){
     if(numbers[index] % 2 !== 0){
     impar += 1;
-}
-    }
+};
+    };
     if (impar > 1){
         resultadoimpar +=impar;
         console.log(`temos ${resultadoimpar} impares no nosso array`);
     }else{
-        console.log("nenhum valor ímpar encontrado")
-    }
+        console.log("nenhum valor ímpar encontrado");
+    };
