@@ -13,3 +13,7 @@ document.getElementsByTagName("section")[0].style.backgroundColor = "orange";
 document.getElementsByTagName("section")[1].style.backgroundColor = "yellow";
 
 document.getElementsByTagName('div')[4].style.backgroundColor = "black";
+
+function text () {
+    let tag1 = document.getElementsByTagName
+}
