@@ -10,35 +10,36 @@ body {
 
 h1 {
     margin-top: 0;
-    padding: 4%;
-    background-color:#002C3E;
+    padding: 2%;
+    background-color:#002c3e9c;
     color: white;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 50px;
 }
 
 p {
     margin: 15px;
     font-style: oblique;
     text-decoration: underline;
+    text-align: center;
 }
 
 fieldset{
-    border-color: #002c3eaf;
     margin: 5px;
     border: 18px
 }
 
 form {
     align-items: center;
-    margin: 10px 30%;
-    background-color:  #6a7f8167;
+    margin: 10px 15%;
+    background-color:  #a7ebf167;
     border-radius: 1%;
     padding-bottom: 10px;
 }
 
-.line-content {
-    margin: 12px;
+
+div {
+    margin-bottom: 10px;
+    
 }
 button {
     color: white;
