@@ -1,5 +1,5 @@
- const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+const factorial = (numero) => { numero == 0 ? 1 : numero > 0 ? numero * factorial(numero - 1);
 
-  // Seu código aqui.
+}
 
-  console.log(oddsAndEvens);
+console.log(factorial(4));
