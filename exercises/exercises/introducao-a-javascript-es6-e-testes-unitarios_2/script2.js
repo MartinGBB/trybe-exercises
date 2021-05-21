@@ -33,3 +33,6 @@ console.log(lesson1);
 
 //Crie uma função para mostrar o tamanho de um objeto.
 
+const tamanho1 = Object.keys(lesson2).length;
+console.log(tamanho1);
+
