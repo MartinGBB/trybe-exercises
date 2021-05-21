@@ -39,4 +39,4 @@ console.log(tamanho1(lesson3));
 //Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
 
 const value = (obj) => Object.values(obj).length;
-console.log(value(lesson3));
+console.log(value(lesson3))
