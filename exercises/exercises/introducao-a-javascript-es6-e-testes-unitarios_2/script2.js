@@ -10,9 +10,6 @@ const lesson1 = {
     numeroEstudantes: 20,
     professor: 'Carlos',
   };
-
-  //Crie uma função para adicionar o turno da manhã na lesson2 . Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
-
   
   const lesson3 = {
     materia: 'Matemática',
@@ -21,27 +18,29 @@ const lesson1 = {
     turno: 'noite',
   };
 
-//   const turnoM = (obj, key, value) => {
-//     obj[key] = value;
-//   }
-//   turnoM(lesson2, "turno", "manhã");
+  //Crie uma função para adicionar o turno da manhã na lesson2 . Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
 
-// //Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
+  const turnoM = (obj, key, value) => {
+    obj[key] = value;
+  }
+  turnoM(lesson2, "turno", "manhã");
 
-// const chaves = (obj) => Object.keys(obj);
-// console.log(chaves(lesson1));
+//Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
 
-// //Crie uma função para mostrar o tamanho de um objeto.
+const chaves = (obj) => Object.keys(obj);
+console.log(chaves(lesson1));
 
-// const tamanho1 = (obj) => Object.keys(obj).length;
-// console.log(tamanho1(lesson3));
+//Crie uma função para mostrar o tamanho de um objeto.
 
-// //Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
+const tamanho1 = (obj) => Object.keys(obj).length;
+console.log(tamanho1(lesson3));
 
-// const value = (obj) => Object.values(obj).length;
-// console.log(value(lesson3));
+//Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
 
-// //Crie um objeto de nome allLessons , que deve agrupar todas as aulas através do Object.assign . Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1 , lesson2 e lesson3 . Ao executar o comando console.log(allLessons)
+const value = (obj) => Object.values(obj).length;
+console.log(value(lesson3));
+
+//Crie um objeto de nome allLessons , que deve agrupar todas as aulas através do Object.assign . Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1 , lesson2 e lesson3 . Ao executar o comando console.log(allLessons)
 
 const allLessons = Object.assign({}, {lesson1, lesson2, lesson3})
 // console.log(allLessons);
@@ -58,3 +57,9 @@ for (let index in chaves) {
 return total;
 }
 console.log(estTotal(allLessons));
+
+//Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto.
+
+const getValueByNumber = (obj, cont) =>  Object.values(obj)[cont]
+console.log(getValueByNumber(lesson1, 0));
+// Output: 'Matématica'
