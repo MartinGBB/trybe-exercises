@@ -1,0 +1,31 @@
+body {
+  background-image: url('https://p4.wallpaperbetter.com/wallpaper/273/935/728/pokemon-pokeball-pokedex-wallpaper-preview.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 300%;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pokemon {
+  display: flex;
+  align-items: center;
+  margin: 10px 10px;
+  justify-content: space-around;
+  min-width: 25%;
+  max-width: 25%;
+  flex: 1 1 auto;
+  border: gray solid 1px;
+  border-radius: 10px;
+  background-color: rgba(139, 0, 0, 0.801);
+  border: solid yellow 2px;
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
