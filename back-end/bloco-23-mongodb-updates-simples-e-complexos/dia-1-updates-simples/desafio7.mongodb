@@ -1,0 +1,8 @@
+use('class');
+
+db.movies.update(
+  { title: "Batman" },
+  { $rename: { budget: "estimatedBudget" } }
+)
+
+db.movies.find({});
