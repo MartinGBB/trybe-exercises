@@ -2,14 +2,14 @@ use('erp');
 db.clientes.aggregate([
   {
     $match: {
-      sexo: "FEMENINO",
+      sexo: "FEMININO",
       dataNascimento: {
-        $gte: ISOdate('1995-01-01'),
-        $lte: ISOdate('2005-12-31'),
-      }
-    }
-    {
-      $limit: 5,
-    }
-  }
+        $gte: ISODate('1995-01-01'),
+        $lte: ISODate('2005-12-31'),
+      },
+    },
+  },
+  {
+    $limit: 5,
+  },
 ]);
