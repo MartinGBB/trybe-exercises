@@ -1,0 +1,26 @@
+use('agg_example');
+db.clients.aggregate([
+  {
+    $match: { State: "Florida" }
+  },
+  {
+    $lookup: {
+      from: "transactions",
+      let: { clientes: "$name" },
+      pipeline: [
+        {
+          $match: {
+            $expr: {
+              $and: [
+                {
+                  $eq: ["$to", "$$clientes"]
+                }
+              ],
+            }
+          }
+        }
+      ],
+      as: "ClientesFlorida"
+    }
+  }
+]);
