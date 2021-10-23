@@ -37,4 +37,18 @@ const alteraPersonages = async () => {
     const simpsonsFamily = simpsons.filter((simpson) => ["1", "2", "3", "4"].includes(simpson.id));
     await fs.writeFile('./simpsonsFamily.json', JSON.stringify(simpsonsFamily));
   };
-  family()
+   family()
+
+  // Crie uma função que adicione ao arquivo simpsonFamily.json o personagem Nelson Muntz .
+
+  const adicionaPersonagem = async () => {
+    try {
+      const data = await fs.readFile('./simpsonsFamily.json', 'utf-8')
+      .then((result) => JSON.parse(result));
+      data.push({ "id": "8", "name": "Nelson Muntz" });
+      await fs.writeFile('./simpsonsFamily.json', JSON.stringify(data));
+    } catch(err) {
+      console.log(err)
+    };
+  };
+  adicionaPersonagem();
