@@ -1,12 +1,7 @@
 const fs = require('fs').promises;
 
-const functionData = async () => {
-  try {
-    const result = await fs.readFile('./simpsons.json', 'utf-8')
-    return console.log(JSON.parse(result));
-  } catch (err) {
-    console.log(`erro: ${err.message}`);
-  };
-};
-
-functionData();
+fs.readFile('./simpsons.json', 'utf-8')
+.then((resolve) => {
+  return JSON.parse(resolve);
+})
+.then((readData) => readData.map(({ id, name }) => console.log(`${id} - ${name}`)));
