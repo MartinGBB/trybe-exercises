@@ -19,6 +19,8 @@ const dadosPersonagem = async (id) => {
 };
 dadosPersonagem('5');
 
+// Crie uma função que altere o arquivo simpsons.json retirando os personagens com id 10 e 6.
+
 const alteraPersonages = async () => {
   const data = await fs.readFile('./simpsons.json', 'utf-8')
   .then((result) => JSON.parse(result));
@@ -26,3 +28,13 @@ const alteraPersonages = async () => {
   console.log(editData);
 }
   alteraPersonages();
+
+  // Crie uma função que leia o arquivo simpsons.json e crie um novo arquivo, chamado simpsonFamily.json , contendo as personagens com id de 1 a 4.
+
+  const family = async () => {
+    const simpsons = await fs.readFile('./simpsons.json', 'utf-8')
+    .then((result) => JSON.parse(result));
+    const simpsonsFamily = simpsons.filter((simpson) => ["1", "2", "3", "4"].includes(simpson.id));
+    await fs.writeFile('./simpsonsFamily.json', JSON.stringify(simpsonsFamily));
+  };
+  family()
