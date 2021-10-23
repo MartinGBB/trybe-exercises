@@ -1,5 +1,5 @@
 
-const functionMath = async (a, b, c) => {
+const functionMath = (a, b, c) => {
   const typeNumber = typeof a != 'number' || typeof b != 'number' || typeof c != 'number';
   const promise = new Promise((resolve, reject) => {
     if(typeNumber) reject(new Error("Informe apenas números"));
