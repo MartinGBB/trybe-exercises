@@ -18,3 +18,11 @@ const dadosPersonagem = async (id) => {
   return console.log(simpsons);
 };
 dadosPersonagem('5');
+
+const alteraPersonages = async () => {
+  const data = await fs.readFile('./simpsons.json', 'utf-8')
+  .then((result) => JSON.parse(result));
+  const editData = data.filter((simpson) => simpson.id != 10 && simpson.id != 6);
+  console.log(editData);
+}
+  alteraPersonages();
