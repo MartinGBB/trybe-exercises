@@ -21,7 +21,8 @@ const drinks = [
 ];
 
 app.get('/drinks', (_req, res) => {
-  res.json(drinks);
+  const result = drinks.sort((a, b) => a.name < b.name ? -1 : a.name > b.name);
+  res.json(result);
 });
 
 app.listen(3002, () => console.log('app drinks na porta 3002'));
