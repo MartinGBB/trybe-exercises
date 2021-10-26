@@ -25,4 +25,11 @@ app.get('/drinks', (_req, res) => {
   res.json(result);
 });
 
+app.get('/drinks/:id', (req, res) => {
+  const { id } = req.params;
+  const drink = drinks.find((b) => b.id === parseInt(id));
+  if(!drink) return res.status(404).json({ message: 'Recipe not found!' });
+  res.status(200).json(drink);
+});
+
 app.listen(3002, () => console.log('app drinks na porta 3002'));
