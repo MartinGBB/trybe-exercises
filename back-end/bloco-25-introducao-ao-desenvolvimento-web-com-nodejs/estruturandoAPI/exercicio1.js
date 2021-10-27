@@ -47,4 +47,14 @@ app.post('/drinks', (req, res) => {
   res.status(200).json({ message: `Recipe created id: ${id}, name: ${name}, Price: ${price} successfully!` })
 });
 
+app.put('/drinks/:id', (req, res) => {
+  const { id } = req.params;
+  const { name, price } = req.body;
+  const indexDrink = drinks.findIndex((d) => d.id === parseInt(id));
+  
+  if (indexDrink === -1) return res.status(404).json({ message: `drink not found` });
+  drinks[indexDrink] = { ...drinks[indexDrink], name, price };
+  res.status(204).end();
+})
+
 app.listen(3002, () => console.log('app drinks na porta 3002'));
