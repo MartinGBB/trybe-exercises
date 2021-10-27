@@ -29,6 +29,14 @@ app.get('/simpsons', rescue(async (_req, res) => {
   const simpsons = await simpsonsFunctions.getSimpsons();
   if (!simpsons) return res.status(500);
   res.status(200).json(simpsons);
+}));
+
+app.get('/simpsons/:id', rescue( async (req, res) => {
+  const { id } = req.params;
+  const simpsons = await simpsonsFunctions.getSimpsons();
+  const filterSimpsons = simpsons.find((s) => s.id === id);
+  if (!filterSimpsons) return res.status(404).json({ message: 'simpson not found' });
+  return res.status(202).json(filterSimpsons);
 }))
 
 app.listen('3003', () => console.log('App ouvindo na porta 3003'));
