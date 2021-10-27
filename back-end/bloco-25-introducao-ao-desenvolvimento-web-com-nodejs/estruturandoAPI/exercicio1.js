@@ -55,6 +55,16 @@ app.put('/drinks/:id', (req, res) => {
   if (indexDrink === -1) return res.status(404).json({ message: `drink not found` });
   drinks[indexDrink] = { ...drinks[indexDrink], name, price };
   res.status(204).end();
-})
+});
 
-app.listen(3002, () => console.log('app drinks na porta 3002'));
+app.delete('/drinks/:id', (req, res) => {
+  const { id } = req.params;
+  const deleteIndex = drinks.findIndex((d) => d.id === parseInt(id));
+  
+  if(deleteIndex === -1) return res.status(404).json({ message: 'drink not found' });
+  
+  drinks.splice(deleteIndex, 1);
+  res.status(204).end();
+});
+
+app.listen(3001, () => console.log('app drinks na porta 3001'));
