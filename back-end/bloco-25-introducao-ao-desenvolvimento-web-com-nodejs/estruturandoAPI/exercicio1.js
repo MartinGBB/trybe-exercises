@@ -32,4 +32,10 @@ app.get('/drinks/:id', (req, res) => {
   res.status(200).json(drink);
 });
 
+app.get('.drinks/search', (req, res) => {
+  const { name, minPrice } = req.query;
+  const filterDrink = drinks.filter((d) => d.name.includes(name) && d.price >= parseInt(minPrice));
+  res.status(200).send(filterDrink);
+})
+
 app.listen(3002, () => console.log('app drinks na porta 3002'));
