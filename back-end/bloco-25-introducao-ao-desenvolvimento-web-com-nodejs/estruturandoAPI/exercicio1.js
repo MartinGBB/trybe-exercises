@@ -25,17 +25,17 @@ app.get('/drinks', (_req, res) => {
   res.json(result);
 });
 
+app.get('/drinks/search', (req, res) => {
+  const { name, minPrice } = req.query;
+  const filterDrink = drinks.filter((d) => d.name.includes(name) && d.price >= parseInt(minPrice));
+  res.status(200).send(filterDrink);
+})
+
 app.get('/drinks/:id', (req, res) => {
   const { id } = req.params;
   const drink = drinks.find((b) => b.id === parseInt(id));
   if(!drink) return res.status(404).json({ message: 'Recipe not found!' });
   res.status(200).json(drink);
 });
-
-app.get('.drinks/search', (req, res) => {
-  const { name, minPrice } = req.query;
-  const filterDrink = drinks.filter((d) => d.name.includes(name) && d.price >= parseInt(minPrice));
-  res.status(200).send(filterDrink);
-})
 
 app.listen(3002, () => console.log('app drinks na porta 3002'));
