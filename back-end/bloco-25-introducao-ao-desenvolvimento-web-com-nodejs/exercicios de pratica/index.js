@@ -37,6 +37,17 @@ app.get('/simpsons/:id', rescue( async (req, res) => {
   const filterSimpsons = simpsons.find((s) => s.id === id);
   if (!filterSimpsons) return res.status(404).json({ message: 'simpson not found' });
   return res.status(202).json(filterSimpsons);
-}))
+}));
+
+app.post('/simpsons', rescue( async (req, res) => {
+  const { id, name } = req.body;
+  const simpsonsGet = await simpsonsFunctions.getSimpsons();
+  const simpsonMap = simpsonsGet.map((s) => s.id).includes(id);
+  
+  if (simpsonMap) return res.status(409).json({ message: 'id already exists' });
+  simpsonsGet.push({ id, name });
+  await simpsonsFunctions.setSimpsons(simpsonsGet);
+  res.status(204).end();
+}));
 
 app.listen('3003', () => console.log('App ouvindo na porta 3003'));
