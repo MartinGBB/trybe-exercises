@@ -3,7 +3,8 @@ const {
   validateName,
   validateEmail,
   validatePassword,
-} = require('../middkewares/validate-register');
+} = require('../middlewares/validate-register');
+const token = require('../middlewares/gerateToken');
 
 const register = express.Router();
 
@@ -13,5 +14,11 @@ validateEmail,
 validatePassword,
 (_req, res) => res.status(200).json({ message: 'user created' }),
 );
+
+register.post('/login',
+validateEmail,
+validatePassword,
+token,
+(_req, res) => res.status(200).json(token))
 
 module.exports = register;

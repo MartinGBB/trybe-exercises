@@ -1,5 +1,5 @@
 const MIN_LENGTH_NAME = 3;
-const EMAIL_REGEX = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+const EMAIL_REGEX = /\S+@\S+\.\S+/;
 const MIN_LENGTH_PASSWORD = 4;
 const MAX_LENGTH_PASSWORD = 8;
 
