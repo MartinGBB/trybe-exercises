@@ -1,16 +1,15 @@
 const express = require('express');
+const Author = require('./models/Author');
 const app = express();
-const port = 3000;
-const author = require('./models/author');
+const PORT = 3000;
 
-app.get('/authors', async (req, res) => {
+app.get('/authors', async (_req, res) => {
   try {
-    const authors = await author.getAll();
+    const authors = await Author.getAll();
     res.status(200).json(authors);
+  } catch(e){
+    console.log(e);
   }
-  catch(e){
-    console.log(e)
-  }
-})
+});
 
-app.listen(port, () => console.log("port 3000"));
+app.listen(PORT, () => console.log(`Ouvindo na portaorta ${PORT}`));
