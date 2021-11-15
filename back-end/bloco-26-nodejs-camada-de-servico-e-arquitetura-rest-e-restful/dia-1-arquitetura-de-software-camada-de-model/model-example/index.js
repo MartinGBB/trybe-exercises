@@ -36,4 +36,17 @@ app.get('/books', async (_req, res)  => {
   };
 });
 
+app.get('/books/:id', async (req, res) => {
+  const { id } = req.params;
+  try {
+    const bookId = await Books.findById(id);
+
+    if (!bookId) return res.status(404).json({ message: 'Not Found'});
+
+    res.status(200).json(bookId);
+  } catch(e){
+    console.log(e);
+  }
+});
+
 app.listen(PORT, () => console.log(`Ouvindo na portaorta ${PORT}`));
