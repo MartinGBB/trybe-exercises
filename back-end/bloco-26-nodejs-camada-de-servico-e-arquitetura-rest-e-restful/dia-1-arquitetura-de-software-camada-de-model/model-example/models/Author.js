@@ -45,7 +45,21 @@ const findById = async (id) => {
   });
 };
 
+const isValid = (firstName, lastName) => {
+  if (!firstName || typeof firstName !== 'string') return false;
+  if (!lastName || typeof lastName !== 'string') return false;
+  return true;
+};
+
+const create = async (firstName, middleName, lastName) => {
+  const query = 'INSERT INTO authors (firstName, middleName, lastName) VALUES(?, ?, ?)';
+  const authors = await connection.execute(query, [firstName, middleName, lastName]);
+  return authors;
+}
+
 module.exports = {
   getAll,
-  findById
+  findById,
+  isValid,
+  create,
 };
