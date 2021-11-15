@@ -12,5 +12,13 @@ app.get('/authors', async (_req, res) => {
   }
 });
 
+app.get('./books', async (_req, res)  => {
+  try {
+    const books = await Books.getAll();
+    res.status(200).json(books);
+  } catch {
+    console.log(e);
+  };
+});
 
 app.listen(PORT, () => console.log(`Ouvindo na portaorta ${PORT}`));
