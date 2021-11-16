@@ -1,8 +1,10 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const Author = require('./models/Author');
 const Books = require('./models/Books');
 const app = express();
 const PORT = 3000;
+app.use(bodyParser.json());
 
 app.get('/authors', async (_req, res) => {
   try {
@@ -47,6 +49,14 @@ app.get('/books/:id', async (req, res) => {
   } catch(e){
     console.log(e);
   }
+});
+
+app.post('/authors', async (req, res) => {
+  const { first_name, middle_name, last_name } = req.body;
+
+  if (!Author.isValid(first_name, middle_name, last_name)) return res.status(400).json({ message: 'dados invalidos'});
+  await Author.create(first_name, middle_name, last_name)
+  res.status(201).json({ message: 'criado com sucesso' })
 });
 
 app.listen(PORT, () => console.log(`Ouvindo na portaorta ${PORT}`));

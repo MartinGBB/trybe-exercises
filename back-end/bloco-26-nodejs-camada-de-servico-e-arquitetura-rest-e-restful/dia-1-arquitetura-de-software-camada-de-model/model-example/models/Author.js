@@ -45,15 +45,15 @@ const findById = async (id) => {
   });
 };
 
-const isValid = (firstName, lastName) => {
-  if (!firstName || typeof firstName !== 'string') return false;
-  if (!lastName || typeof lastName !== 'string') return false;
+const isValid = (first_name, _middle_name, last_name) => {
+  if (!first_name || typeof first_name !== 'string') return false;
+  if (!last_name || typeof last_name !== 'string') return false;
   return true;
 };
 
-const create = async (firstName, middleName, lastName) => {
-  const query = 'INSERT INTO authors (firstName, middleName, lastName) VALUES(?, ?, ?)';
-  const authors = await connection.execute(query, [firstName, middleName, lastName]);
+const create = async (first_name, middle_name, last_name) => {
+  const query = 'INSERT INTO authors (first_name, middle_name, last_name) VALUES(?, ?, ?)';
+  const authors = await connection.execute(query, [first_name, middle_name, last_name]);
   return authors;
 }
 
