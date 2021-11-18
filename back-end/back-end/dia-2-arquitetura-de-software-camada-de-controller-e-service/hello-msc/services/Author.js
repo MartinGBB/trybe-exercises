@@ -17,3 +17,26 @@ const isValid = (firstName, _middleName, lastName) => {
   if (!lastName || typeof lastName !== 'string') return false;
   return true;
 };
+
+const getAll = async () => {
+  const author = await Author.getAll();
+  return author.map(newAuthor);
+};
+
+const findById = async (id) => {
+  const authorId = await Author.findById(id);
+  return authorId.map(newAuthor);
+};
+
+const create = async (firstName, middleName, lastName) => {
+  const authorValid = isValid(firstName, middleName, lastName);
+  if(!authorValid) return false;
+  await Author.create(firstName, middleName, lastName);
+  return true;
+};
+
+module.exports = {
+  getAll,
+  findById,
+  create,
+};

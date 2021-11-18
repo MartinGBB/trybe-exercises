@@ -5,7 +5,7 @@ const getAll = async () => {
   return await connection()
     .then((db) => db.collection('authors').find().toArray())
       .then((authors) => authors.map(({ _id, firstName, middleName, lastName }) => 
-        newAuthor({
+        ({
           id: _id,
           firstName,
           middleName,
@@ -21,7 +21,7 @@ const findById = async (id) => {
   if (!authorData) return null;
 
   const { firstName, middleName, lastName, fullName } = authorData;
-  return newAuthor({
+  return ({
     id,
     firstName,
     middleName,
@@ -38,6 +38,5 @@ const create = async (firstName, middleName, lastName) => {
 module.exports = {
   getAll,
   findById,
-  isValid,
   create,
 };
