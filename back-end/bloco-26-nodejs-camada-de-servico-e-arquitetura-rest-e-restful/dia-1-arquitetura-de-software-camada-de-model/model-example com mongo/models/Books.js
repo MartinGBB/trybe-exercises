@@ -14,23 +14,20 @@ const getAll = async () => {
     )));
 };
 
-const findById =  (id) => {
-  return connection()
+const findById = async (id) => {
+  return await connection()
   .then((db) => db.collection('books').find({ author_id: Number(id) }).toArray());
 };
 
 const isValid = async (title, authorId) => {
   const MIN_LENGTH_TITLE = 3;
   if (!title || typeof title !== 'string' || title.length < MIN_LENGTH_TITLE) return false;
-  if (!authorId || typeof authorId !== 'number' || !(await Author.findById(authorId))) return false;
+  if (!authorId || typeof authorId !== 'string' || authorId.length !== 24) return false;
   return true;
 };
 
-const create = async (title, authorId) => {
-  const query = 'INSERT INTO books (title, authorId) VALUES (?, ?)';
-  const books = await connection.execute(query, [title, authorId]);
-  return books;
-};
+const create = async (id, title, authorId) => connection()
+.then((db) => db.collection('books').insertOne({ id, title, authorId }));
 
 module.exports = {
   getAll,
