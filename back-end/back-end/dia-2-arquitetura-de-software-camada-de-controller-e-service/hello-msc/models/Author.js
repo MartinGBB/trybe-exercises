@@ -1,18 +1,6 @@
 const connection = require('./connection');
 const { ObjectId } = require('mongodb');
 
-const newAuthor = (authorData) => {
-  const { id, firstName, lastName, middleName } = authorData;
-  const name = [firstName, middleName, lastName].filter((name) => name).join(' ');
-  return {
-    id,
-    firstName,
-    lastName,
-    middleName,
-    fullName: name,
-  }
-}
-
 const getAll = async () => {
   return await connection()
     .then((db) => db.collection('authors').find().toArray())
@@ -40,12 +28,6 @@ const findById = async (id) => {
     lastName,
     fullName,
   });
-};
-
-const isValid = (firstName, _middleName, lastName) => {
-  if (!firstName || typeof firstName !== 'string') return false;
-  if (!lastName || typeof lastName !== 'string') return false;
-  return true;
 };
 
 const create = async (firstName, middleName, lastName) => {
