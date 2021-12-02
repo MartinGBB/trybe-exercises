@@ -2,25 +2,20 @@ const formData = require('form-data');
 const axios = require('axios');
 const fs = require('fs');
 
-const stream = fs.createReadStream('./meu-arquivo.txt');
+const URL = 'http://localhost:3001/envios';
 
-const form = new formData();
-form.append('envio', stream);
 
-const formHeaders = form.getHeaders();
+const main = async () => {
+  const stream = fs.createReadStream('./files/file.png');
 
-const sendFile = async () => {
-  try {
-    const response = await axios
-    .post('http://localhost:3000/envios', form, {
-      headers: {
-        ...formHeaders
-      },
-    });
-    return console.log(response.status);
-  } catch(error) {
-    console.log(error)
-  }
+  const form = new formData();
+  form.append('envio', stream);
+
+  const formHeaders = form.getHeaders();
+
+  await axios.post(URL, form, { headers: { ...formHeaders } });
+
+    stream.close();
 }
 
-sendFile();
+main();
