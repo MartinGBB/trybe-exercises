@@ -1,11 +1,13 @@
 const express = require('express');
-const PORT = process.env.PORT || 3001;
-const MESSAGE = process.env.MESSAGE || 'esta vivo!!'
 
 const app = express();
 
+const port = process.env.PORT || 3000;
+const message = process.env.MESSAGE || 'Está vivo!!!';
+
 app.get('/', (_req, res) => {
-  res.status(200).send(MESSAGE);
+  res.send(message + ' E o Procfile também!!! =D');
 });
 
-app.listen(PORT, () => console.log(`ouvindo na porta ${PORT}`))
+app.listen(port);
+console.log(`Escutando na porta ${port}`);
