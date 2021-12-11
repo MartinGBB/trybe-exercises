@@ -3,4 +3,4 @@ apps:
     script: ./index.js
     watch: true
     exec_mode: cluster
-    instances: 5
+    instances: 3
