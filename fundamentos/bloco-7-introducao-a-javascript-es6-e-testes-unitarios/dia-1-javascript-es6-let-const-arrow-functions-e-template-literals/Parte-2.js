@@ -39,9 +39,16 @@ const longestWord = (palavra) => {
 
 console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu")) // retorna 'aconteceu'    
 
+// Função 1 : Escreva uma função que vai receber uma string como parâmetro. Sua função deverá procurar pela letra x em uma string qualquer que você determinar e substituir pela string que você passou como parâmetro. Sua função deve retornar essa nova string .
+
 const myPhrase = (palavra) => {
     const originalPhrase = "Tryber x aqui!";
     const newPhrase = originalPhrase.replace('x', palavra);
     return newPhrase;
 }
 console.log(myPhrase('Bebeto'))
+
+// Um array com escopo global, que é o escopo do arquivo JS , nesse caso, contendo cinco strings com suas principais skills.
+
+const skills = ['HTML', 'CSS', 'JavaScript', 'ReactJs', 'Redux'];
+
