@@ -38,3 +38,10 @@ const longestWord = (palavra) => {
 }
 
 console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu")) // retorna 'aconteceu'    
+
+const myPhrase = (palavra) => {
+    const originalPhrase = "Tryber x aqui!";
+    const newPhrase = originalPhrase.replace('x', palavra);
+    return newPhrase;
+}
+console.log(myPhrase('Bebeto'))
