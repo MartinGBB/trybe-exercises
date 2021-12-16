@@ -46,9 +46,17 @@ const myPhrase = (palavra) => {
     const newPhrase = originalPhrase.replace('x', palavra);
     return newPhrase;
 }
-console.log(myPhrase('Bebeto'))
 
 // Um array com escopo global, que é o escopo do arquivo JS , nesse caso, contendo cinco strings com suas principais skills.
 
 const skills = ['HTML', 'CSS', 'JavaScript', 'ReactJs', 'Redux'];
 
+// Função 2 : Escreva uma função que vai receber a string retornada da Função 1 como parâmetro. Essa função deve concatenar as skills do array global à string que foi passada para a Função 2 via parâmetro. Você deve ordenar os skills em ordem alfabética. Sua função deve retornar essa nova string .
+//Exemplo: "Tryber x aqui! Minhas cinco principais habilidades são:
+
+const message = (saudo, info) => {
+    const sendMessage = `${saudo} Minhas cinco principais habilidades são: ${info}.`;
+    return sendMessage;
+}
+
+console.log(message(myPhrase('Bebeto'), skills));
