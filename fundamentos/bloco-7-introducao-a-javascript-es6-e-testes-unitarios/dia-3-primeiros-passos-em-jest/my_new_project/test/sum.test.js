@@ -8,8 +8,9 @@ describe('implementa soma', () => {
   test('Verifica se 0 + 0 = 0', () => {
     expect(sum(0, 0)).toBe(0);
   });
-  test('verifica que não é possivel somar com "5"', () => {
-    expect(sum(4, '5')).toMatch('45');
+  test('verifica que não é possivel somar com string', () => {
+    expect(() => sum(4, '5')).toThrow();
+    expect(() => sum(4, '5')).toThrow('apenas numeros');
   });
 });
 
