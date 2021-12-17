@@ -1,5 +1,12 @@
 const sum = require('../sum');
 
-test('sums two values', () => {
-  expect(sum(2, 3)).toEqual(5);
+describe('implementa soma', () => {
+  test('sums two values', () => {
+    expect(sum(4, 5)).toBe(9);
+  });
+  
+  test('Verifica se 0 + 0 = 0', () => {
+    expect(sum(0, 0)).toBe(0);
+  });
 });
+
