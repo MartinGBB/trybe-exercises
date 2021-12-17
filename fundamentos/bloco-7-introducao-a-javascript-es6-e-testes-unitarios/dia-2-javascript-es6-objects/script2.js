@@ -72,5 +72,6 @@ const verifica = (objeto, nome, valor) => {
   const verificacao = `${chave}
 ${val}`;
   return verificacao;
-}
+};
+
 console.log(verifica(lesson2, 'materia', 'História'));
