@@ -55,7 +55,7 @@ for (let index in chaves) {
   total += lessons[TodasChaves].numeroEstudantes
 }
 return total;
-}
+};
 console.log(estTotal(allLessons));
 
 //Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto.
