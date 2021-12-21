@@ -3,10 +3,17 @@
 
 const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
 
-const sumParFilter = (numbers) => {
-  const numPar = numbers.filter((num) => num % 2 === 0)
+const sumParFilter = (array) => {
+  const numPar = array.filter((num) => num % 2 === 0)
   .reduce((acc, curr) => acc + curr);
   return numPar;
 };
 
 console.log(sumParFilter(numbers));
+
+const sumParReduce = (array) => {
+  const numParSum = array.reduce((acc, curr) => (curr % 2 === 0) ? curr + acc : acc, 0);
+  return numParSum;
+};
+
+console.log(sumParReduce(numbers));
