@@ -4,141 +4,141 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 ## Fundamentos do Desenvolvimento Web ✅
 ##### Bloco 1: Introdução - Unix & Shell
-- [ ] 1-3: Unix & Shell- Part 1
-- [ ] 1-4: Unix & Shell- Part 2
+- [x] 1-3: Unix & Shell- Part 1
+- [x] 1-4: Unix & Shell- Part 2
 ##### Bloco 2: Git & GitHub
-- [ ] 2-1: O que é e para que serve?
-- [ ] 2-2: Entendendo os comandos
-- [ ] 2-3: Internet - Entendendo como ela funciona
+- [x] 2-1: O que é e para que serve?
+- [x] 2-2: Entendendo os comandos
+- [x] 2-3: Internet - Entendendo como ela funciona
 ##### Bloco 3: Introdução - HTML & CSS
-- [ ] 3-1: HTML & CSS - Estruturas de página
-- [ ] 3-2: HTML & CSS - Primeiros passos em CSS
-- [ ] 3-3: HTML & CSS - Seletores e posicionamento
-- [ ] 3-4: HTML Semântico
-- [ ] 3-5: [Projeto - HTML & CSS]()
+- [x] 3-1: HTML & CSS - Estruturas de página
+- [x] 3-2: HTML & CSS - Primeiros passos em CSS
+- [x] 3-3: HTML & CSS - Seletores e posicionamento
+- [x] 3-4: HTML Semântico
+- [x] 3-5: [Projeto - HTML & CSS]()
 ##### Bloco 4: Introdução - JavaScript
-- [ ] 4-1: JavaScript - Primeiros passos
-- [ ] 4-2: JavaScript - Array e loop For
-- [ ] 4-3: JavaScript - Lógica de Programação e Algoritmos
-- [ ] 4-4: JavaScript - Objetos e funções
-- [ ] 4-5: [Projeto - Playground Functions]()
+- [x] 4-1: JavaScript - Primeiros passos
+- [x] 4-2: JavaScript - Array e loop For
+- [x] 4-3: JavaScript - Lógica de Programação e Algoritmos
+- [x] 4-4: JavaScript - Objetos e funções
+- [x] 4-5: [Projeto - Playground Functions]()
 ##### Bloco 5: Introdução - JavaScript - Projetos
-- [ ] 5-1: JavaScript - DOM e seletores
-- [ ] 5-2: JavaScript - Trabalhando com elementos
-- [ ] 5-3: JavaScript - Eventos
-- [ ] 5-4: JavaScript - Web Storage
-- [ ] 5-7: [Projeto - Lista de tarefas]()
+- [x] 5-1: JavaScript - DOM e seletores
+- [x] 5-2: JavaScript - Trabalhando com elementos
+- [x] 5-3: JavaScript - Eventos
+- [x] 5-4: JavaScript - Web Storage
+- [x] 5-7: [Projeto - Lista de tarefas]()
 ##### Bloco 6: HTML & CSS avançado
-- [ ] 6-1: HTML & CSS - Forms
-- [ ] 6-2: Bibliotecas JavaScript e Frameworks CSS
-- [ ] 6-3: CSS Flexbox - Part 1
-- [ ] 6-4: CSS Flexbox - Part 2
-- [ ] 6-5: CSS Responsivo - Mobile First
-- [ ] 6-6: [Projeto - Página inicial do Trybewals]()
+- [x] 6-1: HTML & CSS - Forms
+- [x] 6-2: Bibliotecas JavaScript e Frameworks CSS
+- [x] 6-3: CSS Flexbox - Part 1
+- [x] 6-4: CSS Flexbox - Part 2
+- [x] 6-5: CSS Responsivo - Mobile First
+- [x] 6-6: [Projeto - Página inicial do Trybewals]()
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
-- [ ] 7-1: JavaScript ES6 - let, const, arrow functions e template literals
-- [ ] 7-2: JavaScript ES6 - Objects
-- [ ] 7-3: Testes unitários em JavaScript
-- [ ] 7-4: [Projeto - JavaScript Testes Unitários]()
+- [x] 7-1: JavaScript ES6 - let, const, arrow functions e template literals
+- [x] 7-2: JavaScript ES6 - Objects
+- [x] 7-3: Testes unitários em JavaScript
+- [x] 7-4: [Projeto - JavaScript Testes Unitários]()
 ##### Bloco 8: JavaScript ES6
-- [ ] 8-1: JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
-- [ ] 8-2: JavaScript ES6 - Higher Order Functions - map e filter
-- [ ] 8-3: JavaScript ES6 - Higher Order Functions - reduce
-- [ ] 8-4: JavaScript ES6 - spread operator, rest parameter, destructuring e mais
-- [ ] 8-5: [Projeto - Zoo functions]()
+- [x] 8-1: JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
+- [x] 8-2: JavaScript ES6 - Higher Order Functions - map e filter
+- [x] 8-3: JavaScript ES6 - Higher Order Functions - reduce
+- [x] 8-4: JavaScript ES6 - spread operator, rest parameter, destructuring e mais
+- [x] 8-5: [Projeto - Zoo functions]()
 ##### Bloco 9: Assincronicidade & Callbacks
-- [ ] 9-1: JavaScript Assíncrono e Callbacks
-- [ ] 9-2: JavaScript Promises
-- [ ] 9-3: [Projeto - Carrinho de Compras]()
+- [x] 9-1: JavaScript Assíncrono e Callbacks
+- [x] 9-2: JavaScript Promises
+- [x] 9-3: [Projeto - Carrinho de Compras]()
 ##### Bloco 10: Jest
-- [ ] 10-1: Primeiros passos no Jest
-- [ ] 10-2: Jest - Testes Assíncronos
-- [ ] 10-3: Jest - Simulando comportamentos
-- [ ] 10-4: [Projeto - Jest Assíncrono e Mocking]()
+- [x] 10-1: Primeiros passos no Jest
+- [x] 10-2: Jest - Testes Assíncronos
+- [x] 10-3: Jest - Simulando comportamentos
+- [x] 10-4: [Projeto - Jest Assíncrono e Mocking]()
 ## Desenvolvimento Front-end ✅
 ##### Bloco 11: Introdução - React
-- [ ] 11-1: 'Hello, world!' no React!
-- [ ] 11-2: Componentes React
-- [ ] 11-3: [Projeto - Movie Cards Library]()
+- [x] 11-1: 'Hello, world!' no React!
+- [x] 11-2: Componentes React
+- [x] 11-3: [Projeto - Movie Cards Library]()
 ##### Bloco 12: React
-- [ ] 12-1: Components com estado
-- [ ] 12-2: Eventos e formulários no React
-- [ ] 12-3: [Projeto - Movie Cards Library Stateful]()
+- [x] 12-1: Components com estado
+- [x] 12-2: Eventos e formulários no React
+- [x] 12-3: [Projeto - Movie Cards Library Stateful]()
 ##### Bloco 13: React
-- [ ] 13-1: Melhorando o reuso de componentes: props.children e PropTypes
-- [ ] 13-2: Ciclo de vida de componentes em React
-- [ ] 13-3: React Router
-- [ ] 13-4: [Projeto - Movie Cards Library CRUD]()
+- [x] 13-1: Melhorando o reuso de componentes: props.children e PropTypes
+- [x] 13-2: Ciclo de vida de componentes em React
+- [x] 13-3: React Router
+- [x] 13-4: [Projeto - Movie Cards Library CRUD]()
 ##### Bloco 14: Metodologias Ágeis
-- [ ] 14-1: Metodologias Ágeis
-- [ ] 14-2: [Projeto - Frontend Online Store]()
+- [x] 14-1: Metodologias Ágeis
+- [x] 14-2: [Projeto - Frontend Online Store]()
 ##### Bloco 15: Testes em React
-- [ ] 15-1: Testando React com a React Testing Library
-- [ ] 15-2: Testando React com a React Testing Library - Parte 2
-- [ ] 15-3: [Projeto - Testes em React]()
+- [x] 15-1: Testando React com a React Testing Library
+- [x] 15-2: Testando React com a React Testing Library - Parte 2
+- [x] 15-3: [Projeto - Testes em React]()
 ##### Bloco 16: Introdução ao Redux
-- [ ] 16-1: Introdução ao Redux
-- [ ] 16-2: React com Redux - Parte 1
-- [ ] 16-3: React com Redux - Prática
-- [ ] 16-4: React com Redux - Parte 2
-- [ ] 16-5: Testes síncronos com React-Redux
-- [ ] 16-6: [Projeto - Tabela com filtros de dados]()
+- [x] 16-1: Introdução ao Redux
+- [x] 16-2: React com Redux - Parte 1
+- [x] 16-3: React com Redux - Prática
+- [x] 16-4: React com Redux - Parte 2
+- [x] 16-5: Testes síncronos com React-Redux
+- [x] 16-6: [Projeto - Tabela com filtros de dados]()
 ##### Bloco 17: Projeto React
-- [ ] 17-1: [Projeto - Jogo de Trivia]()
+- [x] 17-1: [Projeto - Jogo de Trivia]()
 ##### Bloco 18: React & Context API
-- [ ] 18-1: Context API do React
-- [ ] 18-2: React Hooks - useState e useContext
-- [ ] 18-3: React Hooks - useEffect e Hooks customizados
-- [ ] 18-4: [Projeto - StarWars Datatable com Context API e Hooks]()
+- [x] 18-1: Context API do React
+- [x] 18-2: React Hooks - useState e useContext
+- [x] 18-3: React Hooks - useEffect e Hooks customizados
+- [x] 18-4: [Projeto - StarWars Datatable com Context API e Hooks]()
 ##### Bloco 19: Projeto Final de Front-end
-- [ ] 19-1: [Projeto - App de Receitas]()
+- [x] 19-1: [Projeto - App de Receitas]()
 ## Desenvolvimento Back-end ⏳
 ##### Bloco 20: Introdução - Bancos de dados relacionais
-- [ ] 20-1: Banco de dados SQL
-- [ ] 20-2: Encontrando dados em um banco de dados
-- [ ] 20-3: Filtrando dados de forma especÃfica
-- [ ] 20-4: Manipulando tabelas
-- [ ] 20-5: [Projeto - All For One]()
+- [x] 20-1: Banco de dados SQL
+- [x] 20-2: Encontrando dados em um banco de dados
+- [x] 20-3: Filtrando dados de forma especÃfica
+- [x] 20-4: Manipulando tabelas
+- [x] 20-5: [Projeto - All For One]()
 ##### Bloco 21: Bancos de dados relacionais
-- [ ] 21-1: Funções mais usadas no SQL
-- [ ] 21-2: Descomplicando JOINs e UNIONs
-- [ ] 21-3: Stored Routines & Subqueries
-- [ ] 21-4: [Projeto - Vocabulary Booster]()
+- [x] 21-1: Funções mais usadas no SQL
+- [x] 21-2: Descomplicando JOINs e UNIONs
+- [x] 21-3: Stored Routines & Subqueries
+- [x] 21-4: [Projeto - Vocabulary Booster]()
 ##### Bloco 22: Bancos de dados relacionais
-- [ ] 22-1: Transformando ideias em um modelo de banco de dados
-- [ ] 22-2: Normalização, Formas Normais e Dumps
-- [ ] 22-2: Transformando ideias em um modelo de banco de dados - Parte 2
-- [ ] 22-3: [Projeto - One For All]()
+- [x] 22-1: Transformando ideias em um modelo de banco de dados
+- [x] 22-2: Normalização, Formas Normais e Dumps
+- [x] 22-2: Transformando ideias em um modelo de banco de dados - Parte 2
+- [x] 22-3: [Projeto - One For All]()
 ##### Bloco 23: Introdução - NoSQL
-- [ ] 23-1: MongoDB - Introdução
-- [ ] 23-2: Filter Operators
-- [ ] 23-3: [Projeto - Data Flights]()
+- [x] 23-1: MongoDB - Introdução
+- [x] 23-2: Filter Operators
+- [x] 23-3: [Projeto - Data Flights]()
 ##### Bloco 24: Updates
-- [ ] 24-1: Updates Simples
-- [ ] 24-2: Updates Complexos - Arrays - Parte 1
-- [ ] 24-3: Updates Complexos - Arrays - Parte 2
-- [ ] 24-4: [Projeto - Commerce]()
+- [x] 24-1: Updates Simples
+- [x] 24-2: Updates Complexos - Arrays - Parte 1
+- [x] 24-3: Updates Complexos - Arrays - Parte 2
+- [x] 24-4: [Projeto - Commerce]()
 ##### Bloco 25: Aggregation Framework
-- [ ] 25-1: Aggregation Framework - Part 1
-- [ ] 25-2: Aggregation Framework - Part 2
-- [ ] 25-3: [Projeto - Aggregations]()
+- [x] 25-1: Aggregation Framework - Part 1
+- [x] 25-2: Aggregation Framework - Part 2
+- [x] 25-3: [Projeto - Aggregations]()
 ##### Bloco 26: Intro - NodeJS
-- [ ] 26-1: NodeJS - Introdução
-- [ ] 26-2: NodeJS - Fluxo Assíncrono
-- [ ] 26-3: NodeJS - Arquitetura
-- [ ] 26-4: [Projeto - A CLI of Ice and Fire]()
+- [x] 26-1: NodeJS - Introdução
+- [x] 26-2: NodeJS - Fluxo Assíncrono
+- [x] 26-3: NodeJS - Arquitetura
+- [x] 26-4: [Projeto - A CLI of Ice and Fire]()
 ##### Bloco 27: NodeJS
-- [ ] 27-1: Express: HTTP com Node.js
-- [ ] 27-2: Arquitetura de Software - Introdução ao MVC
-- [ ] 27-3: [Projeto - Cookmaster]()
+- [x] 27-1: Express: HTTP com Node.js
+- [x] 27-2: Arquitetura de Software - Introdução ao MVC
+- [x] 27-3: [Projeto - Cookmaster]()
 ##### Bloco 28: NodeJS
-- [ ] 28-1: Arquitetura de Software - Camada de Serviço
-- [ ] 28-2: Arquitetura web - Rest e Restful
-- [ ] 28-3: [Projeto - Store Manager]()
+- [x] 28-1: Arquitetura de Software - Camada de Serviço
+- [x] 28-2: Arquitetura web - Rest e Restful
+- [x] 28-3: [Projeto - Store Manager]()
 ##### Bloco 29: NodeJS
-- [ ] 29-1: NodeJS - JWT - (JSON Web Token)
-- [ ] 29-2: NodeJS - Upload de arquivos com Multer
-- [ ] 29-3: [Projeto - Cookmaster V2]()
+- [x] 29-1: NodeJS - JWT - (JSON Web Token)
+- [x] 29-2: NodeJS - Upload de arquivos com Multer
+- [x] 29-3: [Projeto - Cookmaster V2]()
 ##### Bloco 30: Introdução - Deploy
 - [ ] 30-1: Infraestrutura - Deploy com Heroku
 - [ ] 30-2: Deploy - Gerenciadores de Processos
