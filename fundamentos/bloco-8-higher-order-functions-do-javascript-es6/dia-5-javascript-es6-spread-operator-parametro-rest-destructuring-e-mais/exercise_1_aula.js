@@ -11,3 +11,14 @@ const fruitSalad = (fruit, additional) => {
 };
 
 console.log(fruitSalad(specialFruit, additionalItens));
+
+// Array destructuring
+
+// 1 - Produza o mesmo resultado do código, porém utilizando o array destructuring para recolher a função e a saudação.
+
+const saudacoes = ['Olá', (saudacao) => console.log(saudacao)];
+
+saudacoes[1](saudacoes[0]); // Olá
+
+const [firstP, secundP] = saudacoes;
+secundP(firstP);
