@@ -1,8 +1,8 @@
 # Trybe
-Este repositório contém todas as atividades de aprendizagem desenvolvidas por [Martin Brazon](https://www.linkedin.com/in/martinbrazon/) enquanto estuda na [Trybe](https://www.betrybe.com/) :foguete:
+Este repositório contém todas as atividades de aprendizagem desenvolvidas por [Martin Brazon](https://www.linkedin.com/in/martinbrazon/) enquanto estuda na [Trybe](https://www.betrybe.com/)   🚀 
 "A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
-## Fundamentos do Desenvolvimento Web :marca_de_verificação_branca:
+## Fundamentos do Desenvolvimento Web ✅
 ##### Bloco 1: Introdução - Unix & Shell
 - [ ] 1-3: Unix & Shell- Part 1
 - [ ] 1-4: Unix & Shell- Part 2
@@ -55,7 +55,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 10-2: Jest - Testes Assíncronos
 - [ ] 10-3: Jest - Simulando comportamentos
 - [ ] 10-4: [Projeto - Jest Assíncrono e Mocking]()
-## Desenvolvimento Front-end :ampulheta_tempo_passando:
+## Desenvolvimento Front-end ✅
 ##### Bloco 11: Introdução - React
 - [ ] 11-1: 'Hello, world!' no React!
 - [ ] 11-2: Componentes React
@@ -92,7 +92,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 18-4: [Projeto - StarWars Datatable com Context API e Hooks]()
 ##### Bloco 19: Projeto Final de Front-end
 - [ ] 19-1: [Projeto - App de Receitas]()
-## Desenvolvimento Back-end :ampulheta_tempo_passando:
+## Desenvolvimento Back-end ⏳
 ##### Bloco 20: Introdução - Bancos de dados relacionais
 - [ ] 20-1: Banco de dados SQL
 - [ ] 20-2: Encontrando dados em um banco de dados
@@ -157,7 +157,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 30-3: [Projeto - Webchat]()
 ##### Bloco 34: Projeto
 - [ ] 34-1: [Projeto - Trybeer V2]()
-## Ciência da Computação :ampulheta_tempo_passando:
+## Ciência da Computação ⏳
 ##### Bloco 35: Introdução - Ciência da Computação
 - [ ] 35-1: Arquitetura de Computadores
 - [ ] 35-2: Arquitetura de redes
