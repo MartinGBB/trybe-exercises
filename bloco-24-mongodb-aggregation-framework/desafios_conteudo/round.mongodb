@@ -1,0 +1,10 @@
+use('storage');
+db.products.aggregate([
+  {
+    $project: {
+      _id: 0,
+      name: 1,
+      priceFloor: { $floor: "$sale_price" }
+    },
+  }
+]);

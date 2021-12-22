@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="bootstrap-5.0.1-dist/bootstrap-5.0.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="GET">
+        <h1>Formulário para cadastro de currículo</h1>
+        <p>Preencha os campos abaixo.</p>
+
+        <fieldset>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control shadow p-3 mb-5 bg-body rounded" name="Nome" maxlength="40" required id="floatingInput" autocomplete="off" placeholder="seu nome">
+            <label for="floatingInput">Usuario</label>
+        </div>
+
+        <div class="line-content form-floating mb-3">
+            <input class="form-control shadow p-3 mb-5 bg-body rounded" type="gmail" name="email" maxlength="50" required id="iEmail floatingInput" placeholder="ex: exemple@exemple.com">
+            <label for="iEmail floatingInput">Email</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input class="form-control shadow p-3 mb-5 bg-body rounded" type="text" name="CPF" maxlength="11" required id="floatingInput" autocomplete="off" placeholder="seu CPF">
+            <label for="floatingInput">CPF</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input class="form-control shadow p-3 mb-5 bg-body rounded" type="text" name="Endereço" maxlength="200" required id="floatingInput" autocomplete="off" placeholder="rua, numero de casa">
+            <label for="floatingInput">Endereço</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input class="form-control shadow p-3 mb-5 bg-body rounded" type="text" name="cidade" maxlength="28" required id="floatingInput" autocomplete="off" placeholder="sua cidade">
+            <label for="floatingInput">Cidade</label>
+        </div>
+
+        <div class="line-content">
+            <label for="iEstado" required></label>
+            <select class="form-select shadow p-3 mb-5 bg-body rounded" name="Estado" id="iEstado"></select>
+        </div>
+
+        <div class="line-content form-check">
+            <label for="tipoCasa"> <strong>Tipo de imóvel</strong><br>
+            <input class="form-check-input" type="radio"  name="tipoCasa" id="tipoCasa" value="casa" required><spam>Casa</spam> <br>  
+            <input class="form-check-input" type="radio" name="tipoCasa" id="tipoCasa" value="apartamento" required><spam>Apartamento</spam>
+        </label>
+        </div><br>
+        </fieldset>
+
+        <fieldset>
+        <div class="form-floating">
+            <textarea class="form-control shadow p-3 mb-5 bg-body rounded"  name="Resumo do currículo" maxlength="1000" required id="floatingTextarea2" style="height: 130px" placeholder="resuma sua trayetoria de carrera aqui."></textarea>
+            <label for="floatingTextarea2">Resumo do curriculum</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control shadow p-3 mb-5 bg-body rounded" type="text" name="cargo" id="floatingInput" required maxLength="40" placeholder="cargo atual">
+            <label for="floatingInput">Cargo</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control shadow p-3 mb-5 bg-body rounded" id="floatingInput" name="descripcao cargo" required placeholder="cargo atual"> 
+            <label for="floatingInput">Descripção do cargo</label>
+        </div>
+
+        <div class="line-content">
+            <label for="dataInicio">Data de inicio</label>
+            <input type="date" class="shadow p-3 mb-5 bg-body rounded" name="dataInicio" id="data" required>
+        </div>
+        </fieldset>
+        <button type="submit" class="enviar">enviar</button>
+        <button type="button" class="limpar">limpar</button>
+    </form>
+    <script src="script.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src = "bootstrap-5.0.1-dist/bootstrap-5.0.1-dist/js/bootstrap.min.js"> </script> 
+
+</body>
+
+</html>

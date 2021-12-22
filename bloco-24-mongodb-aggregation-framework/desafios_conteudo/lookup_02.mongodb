@@ -1,0 +1,26 @@
+use('agg_example');
+db.clients.aggregate([
+  {
+    $lookup: {
+      from: "transactions",
+      let: { client: "$name" },
+      pipeline: [
+        {
+          $match: {
+            $expr: {
+              $and: [
+                { $eq: ["$to", "$$client"] }
+              ],
+            }
+          },
+        },
+        { $project: { _id: 0 } }
+      ],
+      as: "transaçõesRecebidas"
+    }
+  },
+  {
+   $sort: { State: 1 },
+  },
+  { $limit: 4 }
+]);

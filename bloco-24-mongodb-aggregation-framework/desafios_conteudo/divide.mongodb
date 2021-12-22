@@ -1,0 +1,12 @@
+use('storage');
+db.products.aggregate([
+  {
+    $project: {
+      _id: 0,
+      name: 1,
+      desconto: {
+        $divide: ["$sale_price", 2]
+      }
+    }
+  }
+]);

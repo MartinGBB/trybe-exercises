@@ -1,3 +1,5 @@
+let moment = required('moment');
+
 function adicionaEstados() {
 
     let select = document.querySelector('#iEstado');
