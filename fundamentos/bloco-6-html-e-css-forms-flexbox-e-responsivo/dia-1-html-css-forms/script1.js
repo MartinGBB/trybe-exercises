@@ -42,4 +42,4 @@ window.onload = function () {
 
     let btnLimpar = document.querySelector('.limpar');
     btnLimpar.addEventListener('click', limpa);
-}
+};
