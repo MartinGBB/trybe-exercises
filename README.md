@@ -169,6 +169,3 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 35-3: Entrada e Saída de dados
 - [ ] 36-4: Entrada e Saída de dados
 - [ ] 35-5: [Projeto - Tech news]()
-betrybe.com
-Trybe. Um novo curso para sua vida.
-A escola que te ensina a programar, a aprender e a trabalhar. E você tem a opção de começar a pagar só quando já estiver trabalhando. (733 kB)
