@@ -60,3 +60,13 @@ const otherPerson = {
 
 console.log(getNationality(otherPerson)); // Ivan is Russian
 console.log(getNationality(person));
+
+// Property shorthand
+
+// 1 -  altere a função getPosition utilizando a property shorthand.
+
+const getPosition = (latitude, longitude) => ({
+  latitude: latitude,
+  longitude: longitude});
+
+console.log(getPosition(-19.8157, -43.9542));
