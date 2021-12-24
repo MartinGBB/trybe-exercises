@@ -11,7 +11,10 @@ const fetchCoins = async () => {
 
 const topTenCoins = async () => {
   const listCoins = await fetchCoins();
-  const coins = listCoins.filter(({ rank }) => rank <= 10);
+  const coins = listCoins.filter(({ rank }) => rank <= 10)
+  .map(({ name, symbol, priceUsd }) => {
+    return `${name} (${symbol}): ${Number(priceUsd).toFixed(2)}`
+  })
   return console.log(coins);
 }
 
