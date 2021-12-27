@@ -1,7 +1,0 @@
-use('class');
-db.movies.updateOne(
-  { title: "Batman" },
-  { $addToSet: { category: "action" } },
-);
-
-db.movies.find({});
