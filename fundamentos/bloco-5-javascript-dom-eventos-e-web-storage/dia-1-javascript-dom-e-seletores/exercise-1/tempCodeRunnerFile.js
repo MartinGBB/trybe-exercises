@@ -1,0 +1,1 @@
+document.getElementsByClassName("title")[0].innerText = "Exercício 5.1 - JavaScript";

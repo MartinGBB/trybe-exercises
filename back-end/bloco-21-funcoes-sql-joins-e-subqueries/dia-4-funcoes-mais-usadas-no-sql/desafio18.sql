@@ -1,0 +1,3 @@
+SELECT FIRST_NAME, LAST_NAME,
+DATEDIFF(CURRENT_DATE(), HIRE_DATE) AS dia_contrato
+FROM hr.employees;
