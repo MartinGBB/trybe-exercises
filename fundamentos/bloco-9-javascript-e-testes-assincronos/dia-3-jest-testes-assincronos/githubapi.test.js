@@ -15,7 +15,7 @@ const getRepos = (url) => (
   test('Aparece repositorios', async () => {
     const url = 'https://api.github.com/orgs/tryber/repos';
     const repositories = await getRepos(url);
-    expect(repositories).toContain('sd-01-week4-5-project-todo-list');
+    expect(repositories).not.toContain('sd-01-week4-5-project-todo-list');
   })
   
 //   const searchRepositories = async () => {
