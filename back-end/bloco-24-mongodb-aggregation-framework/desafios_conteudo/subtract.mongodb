@@ -1,0 +1,15 @@
+use('storage');
+db.products.aggregate([
+  {
+    $project: {
+      _id: 0,
+      nome: 1,
+      lucro: {
+        $subtract: [
+          "$sale_price",
+          { $add: ["$taxes", "$purchase_price"] }
+        ]
+      }
+    }
+  }
+]);
