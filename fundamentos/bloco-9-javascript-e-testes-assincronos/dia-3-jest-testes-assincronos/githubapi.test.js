@@ -12,12 +12,17 @@ const getRepos = (url) => (
   
   
   describe('Verifica repositorios', () => {
+    const url = 'https://api.github.com/orgs/tryber/repos';
 
     test('verifica que não estão os repositorios', async () => {
-      const url = 'https://api.github.com/orgs/tryber/repos';
       const repositories = await getRepos(url);
       expect(repositories).not.toContain('sd-01-week4-5-project-todo-list');
       expect(repositories).not.toContain('sd-01-week4-5-project-meme-generator');
-      
     });
+    
+    test('verifica que estão os repositorios', async () => {
+      const repositories = await getRepos(url);
+      expect(repositories).toContain('linter-template');
+      
+    })
   })
