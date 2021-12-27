@@ -4,6 +4,13 @@ import './App.css';
 class App extends React.Component {
   constructor() {
     super()
+
+    this.state = {
+      btn1: 0,
+      btn2: 0,
+      btn3: 0,
+    };
+
     this.handleClickBtn1 = this.handleClickBtn1.bind(this);
     this.handleClickBtn2 = this.handleClickBtn2.bind(this);
     this.handleClickBtn2 = this.handleClickBtn2.bind(this);
