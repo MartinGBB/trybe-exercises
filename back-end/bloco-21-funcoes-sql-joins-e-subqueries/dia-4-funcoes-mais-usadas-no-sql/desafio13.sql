@@ -1,3 +1,0 @@
-SELECT EMPLOYEE_ID, FIRST_NAME,
-LEFT(HIRE_DATE, 4) AS ano_contrato
-FROM hr.employees;
