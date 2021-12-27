@@ -1,0 +1,10 @@
+use('storage');
+db.products.aggregate([
+  {
+    $addFields: {
+      valorEstoque: {
+        $multiply: ["$sale_price", "$quantity"]
+      }
+    }
+  }
+]);
