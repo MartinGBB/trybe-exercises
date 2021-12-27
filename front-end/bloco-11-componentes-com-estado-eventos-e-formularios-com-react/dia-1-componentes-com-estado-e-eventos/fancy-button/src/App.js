@@ -17,23 +17,29 @@ class App extends React.Component {
   };
 
   handleClickBtn1 = () => (
-    console.log('btn-1')
+    this.setState((estadoAnterior, _props) => ({
+      btn1: estadoAnterior.btn1 + 1,
+    }))
   );
   
   handleClickBtn2 = () => (
-    console.log('btn-2')
+    this.setState((estadoAnterior, _props) => ({
+      btn2: estadoAnterior.btn2 + 2,
+    }))
   );
   
   handleClickBtn3 = () => (
-    console.log('btn-3')
+    this.setState((estadoAnterior, _props) => ({
+      btn3: estadoAnterior.btn3 + 4,
+    }))
   );
 
   render() {
     return (
     <div>
-      <button onClick={ this.handleClickBtn1 }>botão-1</button>
-      <button onClick={ this.handleClickBtn2 }>botão-2</button>
-      <button onClick={ this.handleClickBtn3 }>botão-3</button>
+      <button onClick={ this.handleClickBtn1 }>{ this.state.btn1 }</button>
+      <button onClick={ this.handleClickBtn2 }>{ this.state.btn2 }</button>
+      <button onClick={ this.handleClickBtn3 }>{ this.state.btn3 }</button>
     </div>
     );
   };
