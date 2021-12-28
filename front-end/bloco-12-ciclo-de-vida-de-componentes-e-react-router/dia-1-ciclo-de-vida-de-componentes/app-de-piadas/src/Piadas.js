@@ -5,6 +5,8 @@ class Piadas extends React.Component {
     return (
       <div>
       <h1>Piadas</h1>
+      <p>Piadas</p>
+      <button>seguinte piada</button>
     </div>
     );
   };
