@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 class Select extends React.Component {
   render() {
@@ -6,13 +7,12 @@ class Select extends React.Component {
     const estados = ['Minas Gerais', 'São Paulo', 'Roraima', 'Santa Catarina']
     return (
       <div>
-        <label htmlFor="select">
+        <label>
           { labelText }
           <select
               name={ name }
               value={ value }
               onChange={ handleChange }
-              id= "select"
           > 
           <option value={ value }>{ value }</option>
             {
@@ -26,5 +26,12 @@ class Select extends React.Component {
     );
   };
 };
+
+Select.propTypes = {
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  labelText: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
+}
 
 export default Select;

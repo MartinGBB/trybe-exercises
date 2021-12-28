@@ -35,7 +35,7 @@ class Form extends React.Component {
         <form>
 
             <Select
-              labeltext="Seleccione estado"
+              labelText="Seleccione estado"
               name="estado"
               value={ estado }
               handleChange={ this.handleChange }
@@ -52,7 +52,7 @@ class Form extends React.Component {
             <Input
               labelText="Vou compadecer"
               type="checkbox"
-              nome="vaiComparecer"
+              name="vaiComparecer"
               value={ vaiComparecer }
               handleChange={ this.handleChange }
             />
