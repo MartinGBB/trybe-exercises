@@ -4,9 +4,10 @@ import Piadas from './Piadas';
 class ListPiadas extends React.Component {
   constructor() {
     super()
+    this.saveJoke = this.saveJoke.bind(this)
     this.state = {
       piada: undefined,
-      savePiada: [],
+      storedJoke: [],
       loading: false,
     };
   };
@@ -31,12 +32,20 @@ class ListPiadas extends React.Component {
   componentDidMount() {
     this.fetchJoke();
   }
+
+  saveJoke() {
+    this.setState(({ storedJoke, piada }) => ({
+      storedJoke: [...storedJoke, piada]
+    }));
+    this.fetchJoke()
+  };
+
   render() {
-    const { piada, id, loading } = this.state;
+    const { piada, id, loading, storedJoke } = this.state;
 
     return (
       <div>
-        <Piadas piada={ piada } id={ id } loading={ loading } />
+        <Piadas piada={ piada } id={ id } loading={ loading } saveJoke={ this.saveJoke } storedJoke={ storedJoke } />
       </div>
     );
   };

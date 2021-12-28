@@ -2,13 +2,14 @@ import React from 'react';
 
 class Piadas extends React.Component {
   render() {
-    const { piada, key, loading } = this.props;
-    if (loading) return <p>Loading</p>
+    const { piada, key, loading, saveJoke, storedJoke } = this.props;
     return (
       <div>
-        <h1>Piadas</h1>
+        <h1>Jokes</h1>
+        { storedJoke.map((joke, index) => <p key={ index }>{ joke }</p>) }
+        <p>{ loading ? "Loading..." : '' }</p>
         <p key={ key }>{ piada }</p>
-        <button>seguinte piada</button>
+        <button type="button" onClick={ saveJoke }>Save jokes</button>
     </div>
     );
   };
