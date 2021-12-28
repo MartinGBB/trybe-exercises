@@ -1,12 +1,16 @@
-import './App.css';
+import React from 'react';
 import Piadas from './Piadas';
+import './App.css';
 
-function App() {
-  return (
-    <div className="App">
+class App extends React.Component {
+  render() {
+
+    return (
+      <div className="App">
       <Piadas />
     </div>
-  );
-}
+    );
+  };
+};
 
 export default App;
