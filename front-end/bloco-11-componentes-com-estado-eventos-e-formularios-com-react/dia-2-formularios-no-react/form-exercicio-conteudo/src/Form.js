@@ -1,5 +1,6 @@
 import React from 'react'
 // import './App.css';
+import Input from './Input';
 
 class Form extends React.Component {
   constructor() {
@@ -9,7 +10,7 @@ class Form extends React.Component {
 
     this.state = {
       estado: 'Seleccione',
-      nome: '',
+      name: '',
       vaiComparecer: false,
       description: '',
     };
@@ -44,25 +45,21 @@ class Form extends React.Component {
             </select>
           </label>
 
-          <label>
-            nome
-            <input
-              name="nome"
+            <Input
+              labelText="Nome"
+              name="name"
               type="text"
               value={ name }
-              onChange={ this.handleChange }
+              handleChange={ this.handleChange }
             />
-          </label>
 
-          <label>
-            vou comparecer
-            <input
-            type="checkbox"
-            name="vaiComparecer"
-            value={ vaiComparecer }
-            onChange={ this.handleChange }
+            <Input
+              labelText="Vou compadecer"
+              type="checkbox"
+              nome="vaiComparecer"
+              value={ vaiComparecer }
+              handleChange={ this.handleChange }
             />
-          </label>
 
           <label>
             de uma descripção de você:
