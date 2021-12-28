@@ -35,8 +35,9 @@ class App extends Component {
       <div className="App">
         {
           character.map(({ id, name, image, species, status }) => (
-            <div key={ id }>
+            <div className='container' key={ id }>
             <h1>{ name }</h1>
+            <img src={ image } alt='images'/>
             <p>{ species }</p>
             <p>{ status }</p>
             </div>
