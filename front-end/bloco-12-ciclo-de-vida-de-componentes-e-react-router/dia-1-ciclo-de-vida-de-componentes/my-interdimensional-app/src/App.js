@@ -18,18 +18,24 @@ class App extends Component {
       const requestFetch = await fetch(url);
       const requestResult = await requestFetch.json()
         this.setState({
-          character: requestResult.character,
+          character: requestResult.results,
           loading: false
         });
     });
   };
+
+  componentDidMount() {
+    this.fetchApi()
+  }
 
   render() {
     const { character, loading } = this.state;
     if (loading) return <p>Loading...</p>
     return (
       <div className="App">
-        
+        {
+          console.log(character) 
+        }
       </div>
     );
   }
