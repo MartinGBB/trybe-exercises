@@ -34,7 +34,13 @@ class App extends Component {
     return (
       <div className="App">
         {
-          console.log(character) 
+          character.map(({ id, name, image, species, status }) => (
+            <div key={ id }>
+            <h1>{ name }</h1>
+            <p>{ species }</p>
+            <p>{ status }</p>
+            </div>
+          ))
         }
       </div>
     );
