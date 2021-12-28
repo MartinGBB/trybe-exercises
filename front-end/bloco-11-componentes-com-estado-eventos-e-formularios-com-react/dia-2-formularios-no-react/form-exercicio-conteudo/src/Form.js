@@ -1,6 +1,7 @@
 import React from 'react'
 // import './App.css';
 import Input from './Input';
+import Textarea from './Textarea';
 
 class Form extends React.Component {
   constructor() {
@@ -61,14 +62,12 @@ class Form extends React.Component {
               handleChange={ this.handleChange }
             />
 
-          <label>
-            de uma descripção de você:
-            <textarea
+            <Textarea
+            labelText = { 'de uma descripção de você:' }
             name="description"
             value={ description }
-            onChange={ this.handleChange }
+            handleChange={ this.handleChange }
             />
-          </label>
         </form>
       </div>
     );
