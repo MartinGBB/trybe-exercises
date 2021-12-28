@@ -2,6 +2,7 @@ import React from 'react'
 // import './App.css';
 import Input from './Input';
 import Textarea from './Textarea';
+import Select from './Select';
 
 class Form extends React.Component {
   constructor() {
@@ -33,18 +34,12 @@ class Form extends React.Component {
         <h1>Formulario de pratica</h1>
         <form>
 
-          <label>
-          Seleccione estado
-            <select
-            name="estado"
-            value={ estado }
-            onChange={ this.handleChange }
-            >
-            <option>seleccione</option>
-              <option>Minas Gerais</option>
-              <option>Santa Catarina</option>
-            </select>
-          </label>
+            <Select
+              labeltext="Seleccione estado"
+              name="estado"
+              value={ estado }
+              handleChange={ this.handleChange }
+            />
 
             <Input
               labelText="Nome"
@@ -63,7 +58,7 @@ class Form extends React.Component {
             />
 
             <Textarea
-            labelText = { 'de uma descripção de você:' }
+            labelText="de uma descripção de você:"
             name="description"
             value={ description }
             handleChange={ this.handleChange }
