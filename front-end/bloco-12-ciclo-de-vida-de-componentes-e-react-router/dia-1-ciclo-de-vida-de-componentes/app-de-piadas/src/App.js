@@ -1,5 +1,5 @@
 import React from 'react';
-import Piadas from './Piadas';
+import ListPiadas from './ListPiadas';
 import './App.css';
 
 class App extends React.Component {
@@ -7,7 +7,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-      <Piadas />
+      <ListPiadas />
     </div>
     );
   };
