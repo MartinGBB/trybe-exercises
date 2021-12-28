@@ -8,22 +8,21 @@ class App extends React.Component {
     this.handleChange = this.handleChange.bind(this);
 
     this.state = {
+      estado: 'Seleccione',
       nome: '',
       vaiComparecer: false,
       description: '',
     };
   };
   
-    handleChange = (event) => {
+    handleChange = ({ target: { name, value }}) => {
       this.setState({
-        nome: event.target.value,
-        vaiComparecer: event.target.value,
-        description: event.target.value,
+        [name]: value,
       });
     };
 
   render() {
-    const { name, vaiComparecer, description } = this.state;
+    const { estado, name, vaiComparecer, description } = this.state;
 
     return (
       <div className="App">
@@ -32,7 +31,11 @@ class App extends React.Component {
 
           <label>
           Seleccione estado
-            <select>
+            <select
+            name="estado"
+            value={ estado }
+            onChange={ this.handleChange }
+            >
             <option>seleccione</option>
               <option>Minas Gerais</option>
               <option>Santa Catarina</option>
