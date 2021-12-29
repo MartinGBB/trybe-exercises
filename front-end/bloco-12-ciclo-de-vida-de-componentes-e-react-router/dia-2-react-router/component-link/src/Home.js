@@ -6,6 +6,7 @@ class Home extends Component {
     return (
       <div>
         <p>Component Home</p>
+        <Link to='/stict-access'>login</Link>
         <Link to='/about'>About</Link>
         <Link to='/users'>Users</Link>
       </div>
