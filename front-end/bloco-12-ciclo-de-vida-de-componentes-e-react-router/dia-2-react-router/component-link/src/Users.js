@@ -5,7 +5,6 @@ class Users extends Component {
     const { greetingsMessage } = this.props
     return (
       <div>
-        <p>Component Users</p>
         <p> { greetingsMessage }, My awesome Users component </p>
         <Link to='/'>voltar</Link>
       </div>
