@@ -2,6 +2,7 @@ import { Component } from 'react';
 import './App.css';
 import { BrowserRouter, Route } from  'react-router-dom';
 import Home from './Home';
+import About from './About';
 
 class App extends Component {
   render() {
@@ -9,6 +10,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Route path='/' component={ Home } />
+          <Route path='/about' component={ About } />
         </div>
       </BrowserRouter>
     );
