@@ -8,6 +8,12 @@ test('input na tela', () => {
   expect(renderInput).toHaveProperty('type', 'email');
 });
 
+test('renderiza botao', () => {
+  render(<App />);
+  const button = screen.getByTestId('btn-1');
+  expect(button).toBeInTheDocument();
+  expect(button).toHaveProperty('type', 'button')
+})
 
 test('renderiza dois botoes', () => {
   render(<App />);
