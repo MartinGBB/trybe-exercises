@@ -8,9 +8,9 @@ test('input na tela', () => {
   expect(renderInput).toHaveProperty('type', 'email');
 });
 
-test('renderiza botao', () => {
+
+test('renderiza dois botoes', () => {
   render(<App />);
-  const button = screen.getByRole('button');
-  expect(button).toBeInTheDocument();
-  expect(button).toHaveProperty('type', 'button')
+  const buttons = screen.getAllByRole('button');
+  expect(buttons).toHaveLength(2)
 })
