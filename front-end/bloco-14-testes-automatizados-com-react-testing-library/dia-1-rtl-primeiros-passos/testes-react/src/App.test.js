@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import App from './App';
 
 test('input na tela', () => {
@@ -21,3 +22,19 @@ test('renderiza dois botoes', () => {
   expect(buttons).toHaveLength(2)
 });
 
+test('verifica que é impreso o email na tela', () => {
+  render(<App />);
+  const EMAIL = "email@email.com";
+
+  const emailPrint = screen.getByTestId('id-email-user');
+  expect(emailPrint).toBeInTheDocument();
+  expect(emailPrint).toHaveTextContent('Valor');
+  
+  const emailInput = screen.getByLabelText('Email');
+  const button = screen.getByTestId('btn-1')
+  userEvent.type(emailInput, EMAIL);
+  userEvent.click(button);
+  
+  expect(emailInput).toHaveValue('')
+  expect(emailPrint).toHaveTextContent(`Valor: ${EMAIL}`)
+})
