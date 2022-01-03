@@ -1,16 +1,39 @@
-const percentageGradesIntoLetters = ({ name, disciplines }) => ({
+/* Apoio para a função `getGradeLetter`, lembraremos disso mais a frente */
+const GRADE_DICT = {
+  0.9: 'A',
+  0.8: 'B',
+  0.7: 'C',
+  0.6: 'D',
+  0.1: 'E',
+};
+
+const gradeKeys = Object.keys(GRADE_DICT);
+
+/* Função menor para remover o uso excessivo de `if{}else`s */
+const getGradeLetter = (gradeNumber) => {
+  let letterGrade = 'F';
+
+  for (let i = 0; i < gradeKeys.length; i += 1) {
+    if (gradeNumber >= gradeKeys[i]) {
+      letterGrade = GRADE_DICT[gradeKeys[i]];
+      break;
+    }
+  }
+
+  return letterGrade;
+};
+
+/* Coletar notas */
+const getLetterGrades = ({ name, grade }) => ({
   name,
-  disciplines: disciplines.map(({ nome, grade }) => {
-    let letterGrade;
+  grade,
+  letterGrade: getGradeLetter(grade) });
 
-    if (grade >= 0.9) letterGrade = 'A';
-    else if (grade >= 0.8) letterGrade = 'B';
-    else if (grade >= 0.7) letterGrade = 'C';
-    else if (grade >= 0.6) letterGrade = 'D';
-    else letterGrade = 'F';
-
-    return { nome, grade, letterGrade };
-  }) });
+/* "Converter" */
+const percentageGradesIntoLetters = ({ name, disciplines, school }) => ({
+  name,
+  school,
+  disciplines: disciplines.map(getLetterGrades) });
 
 /* "Determinar" */
 const approvedStudents = ({ disciplines }) =>
@@ -63,4 +86,5 @@ module.exports = {
   approvedStudents,
   updateApprovalData,
   setApproved,
+  getLetterGrades,
 };

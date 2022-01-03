@@ -75,22 +75,22 @@ describe('Testando a função "percentageGradesIntoLetters"', function () {
     });
   });
 
-  // describe('quando a nota é maior ou igual a 0.1 e menor que 0.6', function () {
-  //   it('retorna "E"', function () {
-  //     const student = {
-  //       name: 'Lee',
-  //       disciplines: [
-  //         { name: disciplinesDict.mathematics, grade: 0.1 },
-  //       ],
-  //     };
+  describe('quando a nota é maior ou igual a 0.1 e menor que 0.6', function () {
+    it('retorna "E"', function () {
+      const student = {
+        name: 'Lee',
+        disciplines: [
+          { name: disciplinesDict.mathematics, grade: 0.1 },
+        ],
+      };
 
-  //     const {
-  //       disciplines: [{ letterGrade }],
-  //     } = percentageGradesIntoLetters(student);
+      const {
+        disciplines: [{ letterGrade }],
+      } = percentageGradesIntoLetters(student);
 
-  //     expect(letterGrade).to.be.equals('E');
-  //   });
-  // });
+      expect(letterGrade).to.be.equals('E');
+    });
+  });
 
   describe('quando a nota é menor que 0.1', function () {
     it('retorna "F"', function () {
