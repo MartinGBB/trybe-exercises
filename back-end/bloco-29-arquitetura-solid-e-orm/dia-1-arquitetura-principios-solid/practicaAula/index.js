@@ -1,6 +1,3 @@
-// ./index.js
-
-/* "Converter" */
 const percentageGradesIntoLetters = ({ name, disciplines }) => ({
   name,
   disciplines: disciplines.map(({ name, grade }) => {
@@ -10,7 +7,6 @@ const percentageGradesIntoLetters = ({ name, disciplines }) => ({
     else if (grade >= 0.8) letterGrade = 'B';
     else if (grade >= 0.7) letterGrade = 'C';
     else if (grade >= 0.6) letterGrade = 'D';
-    else if (grade >= 0.1) letterGrade = 'E';
     else letterGrade = 'F';
 
     return { name, grade, letterGrade };
@@ -42,6 +38,26 @@ function setApproved(students) {
   Não se esqueça que é necessário exportar ao final as
   funções para que você possa testa-las de forma unitária
 */
+
+/* Abaixo temos um exemplo de execução */
+const students = [
+  {
+    name: 'Lee',
+    disciplines: [
+      { name: 'matemática', grade: 0.8 },
+      { name: 'história', grade: 0.6 },
+    ],
+  },
+  {
+    name: 'Clementine',
+    disciplines: [
+      { name: 'matemática', grade: 0.8 },
+      { name: 'história', grade: 0.9 },
+    ],
+  },
+];
+
+setApproved(students);
 module.exports = {
   percentageGradesIntoLetters,
   approvedStudents,
