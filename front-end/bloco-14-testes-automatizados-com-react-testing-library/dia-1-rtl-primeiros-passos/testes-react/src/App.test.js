@@ -37,6 +37,11 @@ describe('testa tela principal', () => {
     userEvent.click(button);
     
     expect(emailInput).toHaveValue('')
-    expect(emailPrint).toHaveTextContent(`Valor: ${EMAIL}`)
+    expect(emailPrint).toHaveTextContent(`Valor: ${EMAIL}`);
+  });
+
+  it('Não exibir o email caso não for inserido o email', () => {
+    
   })
 });
+
