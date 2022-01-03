@@ -1,6 +1,6 @@
 const percentageGradesIntoLetters = ({ name, disciplines }) => ({
   name,
-  disciplines: disciplines.map(({ name, grade }) => {
+  disciplines: disciplines.map(({ nome, grade }) => {
     let letterGrade;
 
     if (grade >= 0.9) letterGrade = 'A';
@@ -9,8 +9,8 @@ const percentageGradesIntoLetters = ({ name, disciplines }) => ({
     else if (grade >= 0.6) letterGrade = 'D';
     else letterGrade = 'F';
 
-    return { name, grade, letterGrade };
-  })});
+    return { nome, grade, letterGrade };
+  }) });
 
 /* "Determinar" */
 const approvedStudents = ({ disciplines }) =>
