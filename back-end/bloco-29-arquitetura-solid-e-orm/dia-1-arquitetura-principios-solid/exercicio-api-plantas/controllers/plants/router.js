@@ -1,11 +1,17 @@
 const express = require('express');
 const list = require('./list');
 const get = require('./get');
+const create = require('./create');
+const remove = require('./remove');
+// const update = require('./update');
 
 const router = express.Router({ mergeParams: true });
 
 router.get('/', list);
 router.get('/:id', get);
-// router.delete('/:id', remove);
+router.post('/', create);
+router.delete('/:id', remove);
+// router.put('/:id', update);
+
 
 module.exports = router;
