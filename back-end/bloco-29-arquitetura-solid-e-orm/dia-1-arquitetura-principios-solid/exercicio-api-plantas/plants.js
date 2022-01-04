@@ -43,8 +43,7 @@ const savePlants = () => {
 };
 
 const getPlants = () => {
-  const plants = JSON.parse(localStorage.getItem("plants"));
-  return plants;
+  return defaultPlants;
 };
 
 const getPlantById = (id) => {
@@ -85,3 +84,12 @@ const createNewPlant = (plant) => {
   localStorage.setItem("plants", JSON.stringify(defaultPlants));
   return defaultPlants;
 };
+
+module.exports = {
+  createNewPlant,
+  editPlant,
+  getPlantsThatNeedsSunWithId,
+  removePlantById,
+  getPlantById,
+  getPlants,
+}

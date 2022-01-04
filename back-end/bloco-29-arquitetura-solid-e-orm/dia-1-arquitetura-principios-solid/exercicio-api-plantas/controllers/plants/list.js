@@ -1,7 +1,10 @@
+const plants = require('../../plants');
+
 
 module.exports = (_req, res) => {
   try {
-    res.status(200).json({ message: 'funcionando'});
+    const response = plants.getPlants();
+    res.send(response);
   } catch (err) {
     console.log(err);
   };
