@@ -47,7 +47,7 @@ const getPlants = () => {
 };
 
 const getPlantById = (id) => {
-  return defaultPlants.filter((plant) => plant.id === id);
+  return defaultPlants.filter((plant) => plant.id === parseInt(id));
 };
 
 const removePlantById = (id) => {
