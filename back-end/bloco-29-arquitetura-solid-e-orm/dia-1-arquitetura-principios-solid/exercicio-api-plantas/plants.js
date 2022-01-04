@@ -54,7 +54,7 @@ const getPlantById = (id) => {
 };
 
 const removePlantById = (id) => {
-  defaultPlants = defaultPlants.filter((plant) => plant.id !== id);
+  defaultPlants = defaultPlants.filter((plant) => plant.id !== parseInt(id));
 };
 
 const getPlantsThatNeedsSunWithId = (id) => {
