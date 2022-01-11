@@ -140,8 +140,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 29-2: NodeJS - Upload de arquivos com Multer
 - [x] 29-3: [Projeto - Cookmaster V2]()
 ##### Bloco 30: Introdução - Deploy
-- [ ] 30-1: Infraestrutura - Deploy com Heroku
-- [ ] 30-2: Deploy - Gerenciadores de Processos
+- [x] 30-1: Infraestrutura - Deploy com Heroku
+- [x] 30-2: Deploy - Gerenciadores de Processos
 - [ ] 30-3: [Projeto - Stranger Things]()
 ##### Bloco 31: Projeto
 - [ ] 31-1: [Projeto - Trybeer]()
