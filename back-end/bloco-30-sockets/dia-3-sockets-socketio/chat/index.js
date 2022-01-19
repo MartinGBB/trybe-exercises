@@ -10,9 +10,11 @@ const io = require('socket.io')(http, {
   },
 });
 
-io.on('connection', (socket) => {
-  console.log(`usuario connectado com id: ${socket.id}`)
-});
+// io.on('connection', (socket) => {
+//   console.log(`usuario connectado com id: ${socket.id}`)
+// });
+
+require('./sockets/chat')(io);
 
 
 http.listen(PORT, () => console.log(`Ouvindo na porta ${PORT}`));
