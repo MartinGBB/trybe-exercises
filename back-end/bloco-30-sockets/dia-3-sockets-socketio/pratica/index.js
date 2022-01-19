@@ -14,7 +14,7 @@ const io = require('socket.io')(http, {
   }});
 
   io.on('connection', (socket) => {
-    console.log(`id do usuario ${socket.id}`)
+    console.log(`id do usuario: ${socket.id}`)
   })
 
 http.listen(PORT, () => {
