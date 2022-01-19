@@ -15,7 +15,11 @@ const io = require('socket.io')(http, {
 
   io.on('connection', (socket) => {
     console.log(`id do usuario: ${socket.id}`)
-  })
+    
+      socket.on('ping', () => {
+        console.log(`${socket.id} emitiu um ping`);
+      });
+  });
 
 http.listen(PORT, () => {
   console.log(`Servidor ouvindo na porta ${PORT}`);
