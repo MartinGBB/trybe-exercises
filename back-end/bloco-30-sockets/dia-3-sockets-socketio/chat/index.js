@@ -13,6 +13,7 @@ const io = require('socket.io')(http, {
 app.use(express.static(__dirname + '/public'));
 
 require('./sockets/chat')(io);
+require('./sockets/rooms')(io);
 
 
 http.listen(PORT, () => console.log(`Ouvindo na porta ${PORT}`));
