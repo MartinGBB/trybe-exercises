@@ -2,17 +2,18 @@ PI = 3.14
 
 
 def square(side):
-    return f"Area of square: {side * side}"
+    return side * side
 
 
 def rectangle(length, width):
-    return f"Area of rectangle: {length * width}"
+    return length * width
 
 
 def circle(radius):
-    return f"Area of circle: {radius * PI * radius}"
+    return radius * PI * radius
 
 
-print(square(5))
-print(rectangle(5, 5))
-print(circle(10))
+if __name__ == "__main__":
+    print("Area of square:", square(5))
+    print("Area of rectangle:", rectangle(5, 5))
+    print("Area of circle:", circle(10))
