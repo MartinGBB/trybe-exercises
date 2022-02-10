@@ -4,12 +4,15 @@
 # para aprovação é 6.
 
 file = open("notas.txt", mode="r")
-reprovados = []
+REPROVADOS = []
 
 for nota in file:
     if int(nota.split()[1]) < 6:
-        reprovados.append(nota.split()[0])
-print(reprovados)
-
-
+        REPROVADOS.append(nota.split()[0])
 file.close()
+
+students = open("reprovados.txt", mode='w')
+for reprovado in REPROVADOS:
+    students.writelines(f"{reprovado}\n")
+
+students.close()
