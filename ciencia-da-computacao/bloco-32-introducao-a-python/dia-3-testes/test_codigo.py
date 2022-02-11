@@ -1,4 +1,5 @@
-# Retorna True se o valor é ímpar
+from codigo import is_odd
 
-def is_odd(number):
-    return number % 2 != 0
+
+def test_is_odd_when_number_is_odd_returns_true():
+    assert is_odd(5) is True
