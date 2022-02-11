@@ -9,3 +9,8 @@ def test_frizz_buzz_in_frizz():
 def test_frizz_buzz_in_buzz():
     "testa se retorna Buzz"
     assert frizz_buzz(15)[4] == "Buzz"
+
+
+def test_frizz_buzz_in_frizz_buzz():
+    "testa se retorna FrizzBuzz"
+    assert frizz_buzz(15)[14] == "FrizzBuzz"
