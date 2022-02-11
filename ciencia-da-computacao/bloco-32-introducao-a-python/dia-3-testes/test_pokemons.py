@@ -21,7 +21,7 @@ def test_retrieve_pokemons_by_type():
         "sp_atk": 100,
         "sp_def": 100,
         "speed": 80,
-        }
+    }
 
     fire_type_pokemon = {
         "national_number": "004",
@@ -46,6 +46,4 @@ def test_retrieve_pokemons_by_type():
         json.dumps({"results": [grass_type_pokemon, fire_type_pokemon]})
     )
 
-    assert retrieve_pokemons_by_type("Fire", fake_file) == [
-        fire_type_pokemon
-    ]
+    assert retrieve_pokemons_by_type("Fire", fake_file) == [fire_type_pokemon]
