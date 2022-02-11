@@ -3,4 +3,9 @@ from frizz_buzz import frizz_buzz
 
 def test_frizz_buzz_in_frizz():
     "testa se retorna Frizz"
-    assert frizz_buzz(3)[2] == "Frizz"
+    assert frizz_buzz(15)[2] == "Frizz"
+
+
+def test_frizz_buzz_in_buzz():
+    "testa se retorna Buzz"
+    assert frizz_buzz(15)[4] == "Buzz"
