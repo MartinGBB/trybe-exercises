@@ -1,7 +1,4 @@
 # Retorna True se o valor é ímpar
 
-def isOdd(number):
+def is_odd(number):
     return number % 2 != 0
-
-
-print(isOdd(5))
