@@ -1,0 +1,7 @@
+nome idade
+Maria - 45
+Pedro - 32
+Alberto - 20
+João - 40
+Marcos - 25
+Ramon - 54
