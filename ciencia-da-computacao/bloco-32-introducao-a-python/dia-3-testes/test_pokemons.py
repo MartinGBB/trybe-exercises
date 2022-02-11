@@ -8,9 +8,9 @@ def test_retrieve_pokemons_by_type():
         "national_number": "003",
         "evolution": None,
         "sprites": {
-            "normal": "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/venusaur.png",
+            "normal": "https://img.pokemondb.net/sprites",
             "large": "https://img.pokemondb.net/artwork/venusaur.jpg",
-            "animated": "https://img.pokemondb.net/sprites/black-white/anim/normal/venusaur.gif",
+            "animated": "https://img.pokemondb.net/sprites/black-white/anim/",
         },
         "name": "Venusaur",
         "type": ["Grass", "Poison"],
@@ -27,9 +27,9 @@ def test_retrieve_pokemons_by_type():
         "national_number": "004",
         "evolution": None,
         "sprites": {
-            "normal": "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/charmander.png",
+            "normal": "https://img.pokemondb.net/sprites/omega-ruby-alpha",
             "large": "https://img.pokemondb.net/artwork/charmander.jpg",
-            "animated": "https://img.pokemondb.net/sprites/black-white/anim/normal/charmander.gif",
+            "animated": "https://img.pokemondb.net/sprites/black-white/anim/",
         },
         "name": "Charmander",
         "type": ["Fire"],
