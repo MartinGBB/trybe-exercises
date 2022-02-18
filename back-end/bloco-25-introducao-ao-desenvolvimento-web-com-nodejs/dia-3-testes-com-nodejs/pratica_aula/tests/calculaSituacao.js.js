@@ -11,4 +11,9 @@ describe("testa resposta de calculaSituacao", () => {
     const resposta = calculaSituacao(8);
     expect(resposta).to.be.equals("aprovado");
   });
+
+  it("retorna 'aprovado", () => {
+    const resposta = calculaSituacao(7);
+    expect(resposta).to.be.equals("aprovado");
+  });
 });
