@@ -6,4 +6,9 @@ describe("testa resposta de calculaSituacao", () => {
     const resposta = calculaSituacao(3);
     expect(resposta).to.be.equals("reprovado");
   });
+
+  it("retorna 'aprovado", () => {
+    const resposta = calculaSituacao(8);
+    expect(resposta).to.be.equals("aprovado");
+  });
 });
