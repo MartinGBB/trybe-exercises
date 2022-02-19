@@ -19,7 +19,8 @@ describe("testa função numberType", () => {
 
   describe("recebe numero negativo", () => {
     it("Deve retornar 'negativo'", () => {
-
+      const response = numberType(-2);
+      expect(response).to.be.equals('negativo');
     });
   });
 
