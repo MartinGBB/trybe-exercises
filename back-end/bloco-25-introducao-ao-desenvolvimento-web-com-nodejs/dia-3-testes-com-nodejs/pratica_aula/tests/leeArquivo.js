@@ -6,7 +6,6 @@ const CONTEUDO_DO_ARQUIVO = 'arquivo para ler';
 describe('Testa função "leArquivo"', () => {
   describe('Quando o arquivo existe', () => {
     describe('A resposta', () => {
-
       const resposta = leArquivo(CONTEUDO_DO_ARQUIVO);
 
       it('É uma string', () => {
@@ -21,10 +20,10 @@ describe('Testa função "leArquivo"', () => {
 
   describe('Quando o arquivo não existe', () => {
     describe('A resposta', () => {
+      const resposta = leArquivo('arquivo.txt');
       it('É "null', () => {
-        
+        expect(resposta).to.be.a('null');
       });
-    })
+    });
   });
-
 });
