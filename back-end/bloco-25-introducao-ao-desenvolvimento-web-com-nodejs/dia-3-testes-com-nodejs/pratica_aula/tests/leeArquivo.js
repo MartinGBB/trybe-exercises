@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const leArquivo = require('./leArquivo');
+const leArquivo = require('../leArquivo');
 
 const CONTEUDO_DO_ARQUIVO = 'arquivo para ler';
 
