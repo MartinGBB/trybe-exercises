@@ -3,6 +3,13 @@ const { expect } = require('chai');
 const numberType = require('../numberType');
 
 describe("testa função numberType", () => {
+  describe("Recebe uma string", () => {
+    it("Deve avisar que o parametro deve ser um numero", () => {
+      const response = numberType('uma string');
+      expect(response).to.be.equals("o valor deve ser um número");
+    });
+  });
+
   describe("Recebe um numero", () => {
     it("Deve retornar uma string", () => {
       const response = numberType(5);
