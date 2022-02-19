@@ -14,7 +14,7 @@ describe('Testa função "leArquivo"', () => {
       });
 
       it('O arquivo é igual ao conteúdo do arquivo', () => {
-        
+        expect(resposta).to.be.equals(CONTEUDO_DO_ARQUIVO);
       });
     });
   });
