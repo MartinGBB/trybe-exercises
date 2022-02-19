@@ -5,7 +5,8 @@ const numberType = require('../numberType');
 describe("testa função numberType", () => {
   describe("Recebe um numero", () => {
     it("Deve retornar uma string", () => {
-
+      const response = numberType(5);
+      expect(response).to.be.a('string');
     });
   });
 
