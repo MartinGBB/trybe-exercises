@@ -27,7 +27,7 @@ describe("testa função numberType", () => {
   describe("recebe numero neutro", () => {
     it("Deve retornar 'neutro'", () => {
       const response = numberType(0);
-      expect(response).to.be.equals('neutro')
+      expect(response).to.be.equals('neutro');
     });
   });
 });
