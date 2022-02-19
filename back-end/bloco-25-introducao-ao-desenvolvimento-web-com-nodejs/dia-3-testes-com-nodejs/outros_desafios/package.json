@@ -1,11 +1,11 @@
 {
-  "name": "pratica_aula",
+  "name": "outros_desafios",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "mocha tests"
+    "test": "mocha tests",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
