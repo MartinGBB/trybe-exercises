@@ -3,15 +3,15 @@ const fs = require('fs');
 const sinon = require('sinon');
 const leArquivo = require('../leArquivo');
 
-sinon.stub(fs, 'readFileSync')
-  .returns('valor a ser retornado');
-
 const CONTEUDO_DO_ARQUIVO = 'arquivo para ler';
+
+sinon.stub(fs, 'readFileSync')
+  .returns(CONTEUDO_DO_ARQUIVO);
 
 describe('Testa função "leArquivo"', () => {
   describe('Quando o arquivo existe', () => {
     describe('A resposta', () => {
-      const resposta = leArquivo(CONTEUDO_DO_ARQUIVO);
+      const resposta = leArquivo('arquivo.txt');
 
       it('É uma string', () => {
         expect(resposta).to.be.a('string');
