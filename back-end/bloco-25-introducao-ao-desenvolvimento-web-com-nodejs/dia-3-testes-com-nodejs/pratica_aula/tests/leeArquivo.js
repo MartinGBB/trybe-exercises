@@ -1,5 +1,10 @@
 const { expect } = require('chai');
+const fs = require('fs');
+const sinon = require('sinon');
 const leArquivo = require('../leArquivo');
+
+sinon.stub(fs, 'readFileSync')
+  .returns('valor a ser retornado');
 
 const CONTEUDO_DO_ARQUIVO = 'arquivo para ler';
 
