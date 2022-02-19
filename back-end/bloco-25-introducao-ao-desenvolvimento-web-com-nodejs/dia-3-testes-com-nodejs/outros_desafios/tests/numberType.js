@@ -12,7 +12,8 @@ describe("testa função numberType", () => {
 
   describe("recebe numero positivo maior que zero", () => {
     it("Deve retornar 'positivo'", () => {
-
+      const response = numberType(5);
+      expect(response).to.be.equals("positivo");
     });
   });
 
