@@ -1,4 +1,6 @@
 const { expect } = require('chai');
+const fs = require('fs');
+const sinon = require('sinon');
 
 const writeFile = require('../writeFile');
 const CONTEUDO_DO_ARQUIVO = "conteudo";
