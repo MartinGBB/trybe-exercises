@@ -9,6 +9,10 @@ class Rectangle:
     def area(self):
         return self.width * self.height
 
+    def perimeter(self):
+        return self.width * 2 + self.height * 2
 
-geometric = Rectangle(5, 6)
+
+geometric = Rectangle(5, 10)
 print(geometric.area())
+print(geometric.perimeter())
