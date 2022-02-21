@@ -1,6 +1,3 @@
-from statistics import geometric_mean
-
-
 class Rectangle:
     def __init__(self, width, height):
         self.width = width
@@ -14,5 +11,5 @@ class Rectangle:
 
 
 geometric = Rectangle(5, 10)
-print(geometric.area())
-print(geometric.perimeter())
+print(f'Area: {geometric.area()}')
+print(f'Perimeter: {geometric.perimeter()}')
