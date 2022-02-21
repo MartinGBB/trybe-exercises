@@ -6,13 +6,13 @@ class Circle:
         self.radius = radius
 
     def area(self):
-        return self.radius * PI
+        return round(self.radius * PI, 2)
 
     def perimeter(self):
-        return 2 * PI * self.radius
+        return round(2 * PI * self.radius, 2)
 
 
-calculate_circle = Circle(5)
+calculate_circle = Circle(7)
 
-print(calculate_circle.area())
-print(calculate_circle.perimeter())
+print(f'Area do circulo: {calculate_circle.area()}')
+print(f'Perimetro do circulo: {calculate_circle.perimeter()}')
