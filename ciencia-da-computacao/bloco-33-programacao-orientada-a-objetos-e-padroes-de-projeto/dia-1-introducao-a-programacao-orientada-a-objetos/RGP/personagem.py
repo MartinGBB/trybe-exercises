@@ -45,3 +45,11 @@ class Personagem:
       atqm: int,
       dfs: int,
     ):
+        self.nome
+        self.pv_max = pv_max
+        self.pv_atual = pv_atual
+        self.pm_max = pm_max
+        self.pm_atual = pm_atual
+        self.atqf = atqf
+        self.atqm = atqm
+        self.dfs = dfs
