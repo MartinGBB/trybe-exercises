@@ -39,7 +39,7 @@ class Personagem:
       nome: int,
       pv_max: int,
       pv_atual: int,
-      pm_max:int,
+      pm_max: int,
       pm_atual: int,
       atqf: int,
       atqm: int,
