@@ -73,6 +73,10 @@ class Personagem:
             defensor.alive = False
             print(f"O {defensor.nome} morreu")
 
+        if self.pv_atual <= 0:
+            defensor.alive = False
+            print(f"O {defensor.nome} morreu")
+
     def causa_dano(self, dano, defensor):
         if dano >= 0:
             defensor.pv_atual -= dano
