@@ -45,7 +45,7 @@ class Personagem:
       atqm: int,
       dfs: int,
     ):
-        self.nome
+        self.nome = nome
         self.pv_max = pv_max
         self.pv_atual = pv_atual
         self.pm_max = pm_max
@@ -53,3 +53,9 @@ class Personagem:
         self.atqf = atqf
         self.atqm = atqm
         self.dfs = dfs
+
+    def __str__(self):
+        return self.nome
+
+    def beber_pocao_de_vida(self):
+        self.pv_atual = self.pv_max
