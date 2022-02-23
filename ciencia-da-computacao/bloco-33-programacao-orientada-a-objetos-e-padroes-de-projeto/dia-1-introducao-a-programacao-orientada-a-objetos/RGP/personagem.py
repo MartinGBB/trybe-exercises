@@ -36,12 +36,12 @@
 class Personagem:
     def __init__(
       self,
-      nome,
-      pv_max,
-      pv_atual,
-      pm_max,
-      pm_atual,
-      atqf,
-      atqm,
-      dfs
+      nome: int,
+      pv_max: int,
+      pv_atual: int,
+      pm_max:int,
+      pm_atual: int,
+      atqf: int,
+      atqm: int,
+      dfs: int,
     ):
