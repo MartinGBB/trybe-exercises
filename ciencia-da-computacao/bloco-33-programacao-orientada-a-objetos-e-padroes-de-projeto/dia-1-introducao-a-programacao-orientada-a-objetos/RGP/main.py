@@ -5,4 +5,8 @@ lobo = Personagem("lobo", 10, 10, 0, 0, 4, 0, 0)
 mago = Personagem("mago", 25, 25, 35, 35, 1, 9, 1)
 orc = Personagem("orc", 25, 25, 0, 0, 8, 0, 2)
 
-print(humano)
+while orc.alive == True and mago.alive == True:
+    print(orc)
+    print(mago)
+    mago.ataque_magico(orc)
+    orc.ataque_fisico(mago)

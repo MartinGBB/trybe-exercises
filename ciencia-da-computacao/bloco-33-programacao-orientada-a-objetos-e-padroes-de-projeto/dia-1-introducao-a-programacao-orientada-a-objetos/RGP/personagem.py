@@ -53,9 +53,10 @@ class Personagem:
         self.atqf = atqf
         self.atqm = atqm
         self.dfs = dfs
+        self.alive = True
 
     def __str__(self):
-        return self.nome
+        return f"O {self.nome} tem {str(self.pv_atual)} de vida"
 
     def beber_pocao_vida(self):
         self.pv_atual = self.pv_max
@@ -66,3 +67,24 @@ class Personagem:
     def descansar(self):
         self.beber_pocao_vida()
         self.beber_pocao_mana()
+
+    def verifica_se_morreu(self, defensor):
+        if defensor.pv_atual <= 0:
+            defensor.alive = False
+            print(f"O {defensor.nome} morreu")
+
+    def causa_dano(self, dano, defensor):
+        if dano >= 0:
+            defensor.pv_atual -= dano
+
+    def ataque_fisico(self, defensor):
+        dano = self.atqf - defensor.dfs
+        self.causa_dano(dano, defensor)
+        self.verifica_se_morreu(defensor)
+
+    def ataque_magico(self, defensor):
+        if self.pm_atual >= self.atqm:
+            self.pm_atual -= self.atqm
+            dano = self.atqm - defensor.dfs
+            self.causa_dano(dano, defensor)
+            self.verifica_se_morreu(defensor)
