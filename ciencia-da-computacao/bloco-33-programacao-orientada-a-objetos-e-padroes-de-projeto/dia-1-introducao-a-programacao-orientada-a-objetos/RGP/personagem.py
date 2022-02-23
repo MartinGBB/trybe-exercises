@@ -57,5 +57,9 @@ class Personagem:
     def __str__(self):
         return self.nome
 
-    def beber_pocao_de_vida(self):
+    def beber_pocao_vida(self):
         self.pv_atual = self.pv_max
+
+    def beber_pocao_mana(self):
+        self.pm_atual = self.pm_max
+    
