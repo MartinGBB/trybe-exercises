@@ -35,15 +35,15 @@
 
 class Personagem:
     def __init__(
-      self,
-      nome: int,
-      pv_max: int,
-      pv_atual: int,
-      pm_max: int,
-      pm_atual: int,
-      atqf: int,
-      atqm: int,
-      dfs: int,
+        self,
+        nome: int,
+        pv_max: int,
+        pv_atual: int,
+        pm_max: int,
+        pm_atual: int,
+        atqf: int,
+        atqm: int,
+        dfs: int,
     ):
         self.nome = nome
         self.pv_max = pv_max
@@ -62,4 +62,7 @@ class Personagem:
 
     def beber_pocao_mana(self):
         self.pm_atual = self.pm_max
-    
+
+    def descansar(self):
+        self.beber_pocao_vida()
+        self.beber_pocao_mana()
