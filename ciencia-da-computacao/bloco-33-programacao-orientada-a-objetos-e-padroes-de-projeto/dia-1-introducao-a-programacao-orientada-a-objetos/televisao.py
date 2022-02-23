@@ -1,32 +1,44 @@
 class Televisao:
-    def __init__(
-        self,
-        on_off,
-        ch_up,
-        ch_down,
-        ch_atual,
-        vol_atual
-    ):
-        self.on_off = on_off
-        self.ch_up = ch_up
-        self.ch_down = ch_down
-        self.ch_atual = ch_atual
-        self.vol_up = vol_up
-        self.vol.down = vol_down
-        self.vol_atual = vol_atual
-        self.taxa_vol = 10
+    def __init__(self, status):
+        self.status = status
+        self.canal = 5
+        self.volumen = 5
+        self.taxa_vol = 2
 
-    def liga_tv(self):
-        self.on_off = True
-        print("Tv ligada")
+    def status_tv(self):
+        if self.status is True:
+            print("Tv ligada")
 
-    def desliga_tv(self):
-        self.on_off = False
-        print("Tv desligada")
+        if self.status is False:
+            print("Tv desligada")
 
     def aumentar_volumem(self):
-        self.vol_atual += self.taxa_vol
+        if self.status is True:
+            self.volumen += self.taxa_vol
+            print(f"Aumentar volumen: {self.volumen}")
+        else:
+            print("por favor, ligue a TV")
 
     def diminuir_volumem(self):
-        self.vol_atual -= self.taxa_vol
+        if self.status is True:
+            self.volumen -= self.taxa_vol
+            print(f"Diminuir volumen: {self.volumen}")
+        else:
+            print("por favor, ligue a TV")
 
+    def mudar_canal(self, canal_novo):
+        if self.status is True:
+            print(f"Canal antigo: {self.canal}")
+            self.canal = canal_novo
+            print(f"Novo canal: {self.canal}")
+        else:
+            print("por favor, ligue a TV")
+
+
+tv = Televisao(True)
+
+vol_up = tv.aumentar_volumem()
+vol_down = tv.diminuir_volumem()
+novo_canal = tv.mudar_canal(8)
+
+print(vol_down)
