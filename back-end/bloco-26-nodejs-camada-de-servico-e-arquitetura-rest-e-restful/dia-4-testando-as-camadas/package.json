@@ -1,0 +1,12 @@
+{
+  "name": "dia-4-testando-as-camadas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests/**/*$NAME*/.tests.js --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
