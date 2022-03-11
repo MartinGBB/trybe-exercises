@@ -24,3 +24,7 @@ print(response.content)
 response = requests.get("http://httpbin.org/image/png")
 # Equivalente ao json.loads(response.content)
 print(response.json())
+
+# resposta lance uma exceção caso o status não seja OK
+response = requests.get("http://httpbin.org/status/404")
+print(response.raise_for_status())
