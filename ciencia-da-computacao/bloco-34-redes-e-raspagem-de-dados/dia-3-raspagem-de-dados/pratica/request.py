@@ -22,3 +22,5 @@ print(response.content)
 
 # Recurso JSON
 response = requests.get("http://httpbin.org/image/png")
+# Equivalente ao json.loads(response.content)
+print(response.json())
