@@ -11,3 +11,8 @@ print(response.content)
 # Requisicao do tipo POST
 response = requests.post("https://httpbin.org/post", data="some content")
 print(response.text)
+
+# Requisição enviando cabeçalho (header)
+response = requests.get("http://httpbin.org/get", headers={"Accept": "application/json"})
+print(response.text)
+
