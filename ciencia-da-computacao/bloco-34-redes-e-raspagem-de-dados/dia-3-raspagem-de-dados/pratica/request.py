@@ -7,3 +7,7 @@ print(response.headers["Content-Type"])
 print(response.text)
 print(response.content)
 
+
+# Requisicao do tipo POST
+response = requests.post("https://httpbin.org/post", data="some content")
+print(response.text)
