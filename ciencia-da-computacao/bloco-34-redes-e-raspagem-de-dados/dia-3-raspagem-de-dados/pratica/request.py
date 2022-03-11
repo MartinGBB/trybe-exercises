@@ -16,3 +16,9 @@ print(response.text)
 response = requests.get("http://httpbin.org/get", headers={"Accept": "application/json"})
 print(response.text)
 
+# Requisicao a recurso binario
+response = requests.get("http://httpbin.org/get")
+print(response.content)
+
+# Recurso JSON
+response = requests.get("http://httpbin.org/image/png")
