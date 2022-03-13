@@ -9,7 +9,10 @@ prices = selector.css(".product_price .price_color::text").getall()
 # print(prices)
 
 
-for product in selector.css(".product_pod"):
-    titles = product.css("h3 a::attr(title)").get()
-    prices = product.css(".product_price .price_color::text").get()
-    print(titles, prices)
+# for product in selector.css(".product_pod"):
+#     titles = product.css("h3 a::attr(title)").get()
+#     prices = product.css(".product_price .price_color::text").get()
+#     print(titles, prices)
+
+next_page_url = selector.css(".next a::attr(href)").get()
+print(next_page_url)
