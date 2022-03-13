@@ -1,4 +1,3 @@
-from importlib.metadata import requires
 from parsel import Selector
 import requests
 
@@ -11,7 +10,7 @@ while url_next_page:
 
     for product in selector.css(".product_pod"):
         titles = product.css("h3 a::attr(title)").get()
-        prices = product.css(".price_color::text").get()
+        prices = product.css(".price_color::text").re(r"£\d+\.\d{2}")
         print(titles, prices)
         # Buscando url do card
         detail_href = product.css("h3 a::attr(href)").get()
