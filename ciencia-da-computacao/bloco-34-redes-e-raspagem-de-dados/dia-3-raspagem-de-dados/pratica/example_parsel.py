@@ -1,3 +1,4 @@
+from pydoc import describe
 from parsel import Selector
 import requests
 
@@ -20,6 +21,10 @@ while url_next_page:
         detail_selector = Selector(text=detail_response.text)
         # Buscando descripcao
         details_card = detail_selector.css("#product_description ~ p::text").get()
+
+        suffix = "...more"
+        if details_card.endswith(suffix):
+            details_card = details_card[:-len(suffix)]
         print(details_card)
 
     url_next_page = selector.css(".next a::attr(href)").get()
