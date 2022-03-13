@@ -5,5 +5,11 @@ response = requests.get("http://books.toscrape.com/")
 selector = Selector(text=response.text)
 titles = selector.css(".product_pod h3 a::attr(title)").getall()
 prices = selector.css(".product_price .price_color::text").getall()
-print(titles)
-print(prices)
+# print(titles)
+# print(prices)
+
+
+for product in selector.css(".product_pod"):
+    titles = product.css("h3 a::attr(title)").get()
+    prices = product.css(".product_price .price_color::text").get()
+    print(titles, prices)
