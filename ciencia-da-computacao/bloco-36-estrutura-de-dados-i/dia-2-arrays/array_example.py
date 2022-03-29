@@ -1,5 +1,5 @@
 class Array:
-    def __int__(self):
+    def __init__(self):
         self.data = []
 
     def __len__(self):
@@ -12,4 +12,11 @@ class Array:
         return self.data[index]
     
     def set(self, index, value):
-        return self.data.insert(index, value)
+        self.data.insert(index, value)
+
+array = Array()
+array.set(0, "Ana")
+array.set(1, "Shirley")
+
+print(array.get(0))
+print(array.get(1))
