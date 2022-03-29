@@ -11,4 +11,5 @@ class Array:
     def get(self, index):
         return self.data[index]
     
-    
+    def set(self, index, value):
+        return self.data.insert(index, value)
