@@ -17,6 +17,11 @@ class Array:
 array = Array()
 array.set(0, "Ana")
 array.set(1, "Shirley")
+array.set(1, "Marcos")
+array.set(1, "Ramona")
 
-print(array.get(0))
-print(array.get(1))
+index = 0
+
+while index < len(array):
+    print("Posicao:", index, "Nome:", array.get(index))
+    index += 1
