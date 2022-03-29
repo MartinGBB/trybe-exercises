@@ -14,12 +14,17 @@ class Array:
     def set(self, index, value):
         self.data.insert(index, value)
 
+    def remove(self, index):
+        return self.data.pop(index)
+
 array = Array()
 array.set(0, "Martin")
 array.set(1, "Ana")
 array.set(2, "Shirley")
 array.set(3, "Marcos")
 array.set(4, "Ramona")
+
+array.remove(4)
 
 index = 0
 
