@@ -8,4 +8,7 @@ class Array:
     def __str__(self):
         return str(self.data)
       
+    def get(self, index):
+        return self.data[index]
+    
     
