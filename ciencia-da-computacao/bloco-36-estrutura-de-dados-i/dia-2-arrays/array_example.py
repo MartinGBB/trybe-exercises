@@ -15,10 +15,11 @@ class Array:
         self.data.insert(index, value)
 
 array = Array()
-array.set(0, "Ana")
-array.set(1, "Shirley")
-array.set(1, "Marcos")
-array.set(1, "Ramona")
+array.set(0, "Martin")
+array.set(1, "Ana")
+array.set(2, "Shirley")
+array.set(3, "Marcos")
+array.set(4, "Ramona")
 
 index = 0
 
